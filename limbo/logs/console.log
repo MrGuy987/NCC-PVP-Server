@@ -1,0 +1,79 @@
+Starting org.bukkit.craftbukkit.Main
+2026-10-20T06:19:46.703363903Z ServerMain WARN Advanced terminal features are not available in this environment
+[06:19:48 INFO]: [bootstrap] Running Java 25 (OpenJDK 64-Bit Server VM 25.0.4.1+1-LTS; Microsoft Microsoft-14951822) on Linux 6.8.0-1064-azure (amd64)
+[06:19:48 INFO]: [bootstrap] Loading Paper 26.2-111-main@f570646 (2026-08-07T16:16:19Z) for Minecraft 26.2
+[06:19:48 INFO]: [PluginInitializerManager] Initializing plugins...
+[06:19:51 INFO]: [PluginInitializerManager] Initialized 3 plugins
+[06:19:51 INFO]: [PluginInitializerManager] Bukkit plugins (3):
+ - ViaBackwards (5.11.0), ViaVersion (5.11.0), nLogin (2.0.19)
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.joml.MemUtil$MemUtilUnsafe (file:/workspaces/eaglercraft-26.2/limbo/libraries/org/joml/joml/1.10.8/joml-1.10.8.jar)
+WARNING: Please consider reporting this to the maintainers of class org.joml.MemUtil$MemUtilUnsafe
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[06:20:20 INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Initialising converters for DataConverter...
+[06:20:22 INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
+[06:20:28 INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Finished initialising converters for DataConverter in 7,933.1ms
+[06:20:45 INFO]: Loaded 1585 recipes
+[06:20:45 INFO]: Loaded 1688 advancements
+[06:20:46 INFO]: Starting minecraft server version 26.2
+[06:20:46 INFO]: Loading properties
+[06:20:46 INFO]: This server is running Paper version 26.2-111-main@f570646 (2026-08-07T16:16:19Z) (Implementing API version 26.2.build.111-stable)
+[06:20:46 INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
+[06:20:47 INFO]: Server Ping Player Sample Count: 12
+[06:20:47 INFO]: Using 4 threads for Netty based IO
+[06:20:49 INFO]: [MoonriseCommon] Paper is using 1 worker threads, 1 I/O threads
+[06:20:51 INFO]: Default game type: SURVIVAL
+[06:20:51 INFO]: Generating keypair
+[06:20:52 INFO]: Starting Minecraft server on *:65535
+[06:20:52 INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+[06:20:52 INFO]: Paper: Using OpenSSL 3.x.x (Linux x86_64) cipher from Velocity.
+[06:20:54 INFO]: [ViaVersion] Loading server plugin ViaVersion v5.11.0
+[06:20:54 INFO]: [ViaVersion] ViaVersion 5.11.0 is now loaded. Registering protocol transformers and injecting...
+[06:20:57 INFO]: [ViaBackwards] Loading translations...
+[06:20:57 INFO]: [ViaBackwards] Registering protocols...
+[06:20:59 INFO]: [ViaBackwards] Loading server plugin ViaBackwards v5.11.0
+[06:20:59 INFO]: [nLogin] Loading server plugin nLogin v2.0.19
+[06:21:00 INFO]: [nLogin] Enabling nLogin v2.0.19
+[06:21:02 INFO]: [nLogin] Successful plugin core start (took 1.73s)
+[06:21:02 INFO]: [nLogin] [38;2;85;85;255m          __             _       [0m
+[06:21:02 INFO]: [nLogin] [38;2;85;85;255m  _ __   / /  ___   __ _(_)_ __  [0m
+[06:21:02 INFO]: [nLogin] [38;2;85;85;255m | '_ \ / /  / _ \ / _` | | '_ \ [0m
+[06:21:02 INFO]: [nLogin] [38;2;85;85;255m | | | / /__| (_) | (_| | | | | |[0m
+[06:21:02 INFO]: [nLogin] [38;2;85;85;255m |_| |_\____/\___/ \__, |_|_| |_|[0m
+[06:21:02 INFO]: [nLogin] [38;2;85;85;255m                  |___/            [0m
+[06:21:02 INFO]: [nLogin] [38;2;85;85;255m By: www.nickuc.com - V 2.0.19[0m
+[06:21:02 INFO]: [nLogin] [38;2;85;85;255m [0m
+[06:21:03 INFO]: [nLogin] Loading packetevents-spigot 2.13.0...
+[06:21:08 INFO]: [nLogin] Download finished (signature = OK, hash = 689f3fad248f72f2727bfec8f565ee9d7d2aa151aa7e60ab5c87530877cdd1ba, took 7289ms)
+[06:21:12 WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[06:21:12 WARN]: The server will make no attempt to authenticate usernames. Beware.
+[06:21:12 WARN]: Whilst this makes it possible to use Velocity, unless access to your server is properly restricted, it also opens up the ability for hackers to connect with any username they choose.
+[06:21:12 WARN]: Please see https://docs.papermc.io/velocity/security for further information.
+[06:21:12 WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[06:21:12 INFO]: Preparing level "world"
+[06:21:13 INFO]: Loading 0 persistent chunks for level 'minecraft:overworld'...
+[06:21:13 INFO]: Preparing spawn area: 100%
+[06:21:13 INFO]: Prepared spawn area in 10 ms
+[06:21:13 INFO]: Loading 0 persistent chunks for level 'minecraft:the_nether'...
+[06:21:13 INFO]: Preparing spawn area: 100%
+[06:21:13 INFO]: Prepared spawn area in 4 ms
+[06:21:13 INFO]: Loading 0 persistent chunks for level 'minecraft:the_end'...
+[06:21:13 INFO]: Prepared spawn area in 4 ms
+[06:21:13 INFO]: Done preparing level "world" (1.536s)
+[06:21:13 INFO]: [ViaVersion] Enabling ViaVersion v5.11.0
+[06:21:14 INFO]: [ViaVersion] ViaVersion detected server version: 26.2 (776)
+[06:21:14 INFO]: [ViaBackwards] Enabling ViaBackwards v5.11.0
+[06:21:14 INFO]: [spark] Starting background profiler...
+[06:21:16 INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[06:21:16 INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+[06:21:16 INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+[06:21:16 INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[06:21:16 INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[06:21:16 INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[06:21:16 INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[06:21:16 INFO]: Running delayed init tasks
+[06:21:16 INFO]: Done (93.487s)! For help, type "help"
+[06:21:16 INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor.
+[06:21:16 WARN]: [ViaVersion] There is a newer plugin version available: 5.12.1, you're on: 5.11.0
+[06:21:16 WARN]: *** You are running an outdated version of Minecraft, which is 2 releases and 23 builds behind!
+[06:21:16 WARN]: *** Please update to the latest stable version on https://papermc.io/downloads/paper ***

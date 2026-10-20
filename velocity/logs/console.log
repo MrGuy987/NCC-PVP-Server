@@ -1,0 +1,97 @@
+2026-10-20T06:19:44.937725256Z main WARN Advanced terminal features are not available in this environment
+[06:19:47 INFO]: Booting up Velocity 4.1.0-SNAPSHOT (git-00759e52-b16)...
+[06:19:48 INFO]: Connections will use epoll channels, libdeflate (Linux x86_64) compression, OpenSSL 3.x.x (Linux x86_64) ciphers
+[06:19:49 WARN]: The proxy is running in offline mode! This is a security risk and you will NOT receive any support!
+[06:19:50 INFO]: Loading localizations...
+[06:19:51 INFO]: Loading plugins...
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::staticFieldBase has been called by com.google.inject.internal.aop.HiddenClassDefiner (file:/workspaces/eaglercraft-26.2/velocity/velocity.jar)
+WARNING: Please consider reporting this to the maintainers of class com.google.inject.internal.aop.HiddenClassDefiner
+WARNING: sun.misc.Unsafe::staticFieldBase will be removed in a future release
+[06:19:54 INFO] [eaglerxserver]: Loading EaglercraftXServer 1.1.1...
+[06:19:54 INFO] [eaglerxserver]: (Platform: Velocity)
+[06:19:54 INFO] [eaglerxserver]: Server Name: "EaglercraftXServer"
+[06:19:55 ERROR] [eaglerxserver]: Could not load server icon: server-icon.png
+javax.imageio.IIOException: Can't read input file!
+	at java.desktop/javax.imageio.ImageIO.read(ImageIO.java:1264) ~[?:?]
+	at net.lax1dude.eaglercraft.backend.server.base.ServerIconLoader.loadServerIcon(ServerIconLoader.java:112) ~[?:?]
+	at net.lax1dude.eaglercraft.backend.server.base.ServerIconLoader$1.loadServerIcon(ServerIconLoader.java:51) ~[?:?]
+	at net.lax1dude.eaglercraft.backend.server.base.EaglerListener.<init>(EaglerListener.java:90) ~[?:?]
+	at net.lax1dude.eaglercraft.backend.server.base.EaglerListener.<init>(EaglerListener.java:58) ~[?:?]
+	at net.lax1dude.eaglercraft.backend.server.base.EaglerXServer.loadProxying(EaglerXServer.java:355) ~[?:?]
+	at net.lax1dude.eaglercraft.backend.server.base.EaglerXServer.load(EaglerXServer.java:339) ~[?:?]
+	at net.lax1dude.eaglercraft.backend.server.velocity.PlatformPluginVelocity.<init>(PlatformPluginVelocity.java:256) ~[?:?]
+	at net.lax1dude.eaglercraft.backend.server.velocity.PlatformPluginVelocity$$FastClassByGuice$$bb1b6.GUICE$TRAMPOLINE(<generated>) ~[?:?]
+	at net.lax1dude.eaglercraft.backend.server.velocity.PlatformPluginVelocity$$FastClassByGuice$$bb1b6.apply(<generated>) ~[?:?]
+	at com.google.inject.internal.DefaultConstructionProxyFactory$FastClassProxy.newInstance(DefaultConstructionProxyFactory.java:82) ~[velocity.jar:4.1.0-SNAPSHOT (git-00759e52-b16)]
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:114) ~[velocity.jar:4.1.0-SNAPSHOT (git-00759e52-b16)]
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:91) ~[velocity.jar:4.1.0-SNAPSHOT (git-00759e52-b16)]
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:300) ~[velocity.jar:4.1.0-SNAPSHOT (git-00759e52-b16)]
+	at com.google.inject.internal.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:40) ~[velocity.jar:4.1.0-SNAPSHOT (git-00759e52-b16)]
+	at com.google.inject.internal.SingletonScope$1.get(SingletonScope.java:169) ~[velocity.jar:4.1.0-SNAPSHOT (git-00759e52-b16)]
+	at com.google.inject.internal.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:45) ~[velocity.jar:4.1.0-SNAPSHOT (git-00759e52-b16)]
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1148) ~[velocity.jar:4.1.0-SNAPSHOT (git-00759e52-b16)]
+	at com.google.inject.internal.InjectorImpl.getInstance(InjectorImpl.java:1186) ~[velocity.jar:4.1.0-SNAPSHOT (git-00759e52-b16)]
+	at com.velocitypowered.proxy.plugin.loader.java.JavaPluginLoader.createPlugin(JavaPluginLoader.java:135) ~[velocity.jar:4.1.0-SNAPSHOT (git-00759e52-b16)]
+	at com.velocitypowered.proxy.plugin.VelocityPluginManager.loadPlugins(VelocityPluginManager.java:199) ~[velocity.jar:4.1.0-SNAPSHOT (git-00759e52-b16)]
+	at com.velocitypowered.proxy.VelocityServer.loadPlugins(VelocityServer.java:439) ~[velocity.jar:4.1.0-SNAPSHOT (git-00759e52-b16)]
+	at com.velocitypowered.proxy.VelocityServer.start(VelocityServer.java:310) ~[velocity.jar:4.1.0-SNAPSHOT (git-00759e52-b16)]
+	at com.velocitypowered.proxy.Velocity.main(Velocity.java:71) ~[velocity.jar:4.1.0-SNAPSHOT (git-00759e52-b16)]
+[06:19:55 INFO]: Loaded plugin eaglerxserver 1.1.1 by lax1dude
+[06:19:55 INFO]: Loaded plugin luckperms 5.5.71 by Luck
+[06:19:56 INFO]: Loaded plugin nantibot 2.0.8 by NickUC
+[06:19:57 INFO]: Loaded plugin nlogin 2.0.19 by NickUC
+[06:19:57 INFO]: Loaded plugin viaversion 5.11.0 by _MylesC, creeper123123321, Gerrygames, kennytv, Matsv, EnZaXD, RK_01
+[06:19:57 INFO]: Loaded plugin viabackwards 5.11.0 by Matsv, kennytv, Gerrygames, creeper123123321, ForceUpdate1, EnZaXD
+[06:19:57 INFO]: Loaded 7 plugins
+[06:19:58 INFO] [luckperms]: Loading configuration...
+[06:19:59 INFO]: [38;2;85;255;255m       [38;2;0;170;170m __    [0m
+[06:19:59 INFO]: [38;2;85;255;255m  |    [38;2;0;170;170m|__)   [0m[38;2;0;170;0mLuckPerms[0m [38;2;85;255;255mv5.5.71[0m
+[06:19:59 INFO]: [38;2;85;255;255m  |___ [38;2;0;170;170m|      [38;2;85;85;85mRunning on Velocity[0m
+[06:19:59 INFO]: 
+[06:20:00 INFO] [luckperms]: Loading storage provider... [H2]
+[06:20:02 INFO] [luckperms]: Loading internal permission managers...
+[06:20:02 INFO] [luckperms]: Performing initial data load...
+[06:20:02 INFO] [luckperms]: Successfully enabled. (took 5175ms)
+[06:20:02 WARN]: The server channel initializer has been replaced by java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+[06:20:02 INFO] [eaglerxserver]: Enabling EaglercraftXServer 1.1.1...
+[06:20:02 INFO] [eaglerxserver]: Connecting to skin cache database "jdbc:sqlite:eagler_skins_cache.db"...
+[06:20:03 INFO] [eaglerxserver]: Connected to skin cache database successfully!
+[06:20:06 INFO] [eaglerxserver]: You are running the latest version of EaglerXServer
+[06:20:09 INFO] [nantibot]: Successful plugin core start (took 1.62s)
+[06:20:09 INFO]: [nAntiBot] [38;2;255;85;85m          _         _   _   ___       _   [0m
+[06:20:09 INFO]: [nAntiBot] [38;2;255;85;85m  _ __   /_\  _ __ | |_(_) / __\ ___ | |_ [0m
+[06:20:09 INFO]: [nAntiBot] [38;2;255;85;85m | '_ \ //_\\| '_ \| __| |/__\/// _ \| __|[0m
+[06:20:09 INFO]: [nAntiBot] [38;2;255;85;85m | | | /  _  \ | | | |_| / \/  \ (_) | |_ [0m
+[06:20:09 INFO]: [nAntiBot] [38;2;255;85;85m |_| |_\_/ \_/_| |_|\__|_\_____/\___/ \__|[0m
+[06:20:09 INFO]: [nAntiBot] [38;2;255;85;85m                                         [0m
+[06:20:09 INFO]: [nAntiBot] [38;2;255;85;85m By: www.nickuc.com - V 2.0.8[0m
+[06:20:09 INFO]: [nAntiBot] 
+[06:20:15 INFO] [nlogin]: Successful plugin core start (took 1.15s)
+[06:20:15 INFO]: [nLogin] [38;2;85;85;255m          __             _       [0m
+[06:20:15 INFO]: [nLogin] [38;2;85;85;255m  _ __   / /  ___   __ _(_)_ __  [0m
+[06:20:15 INFO]: [nLogin] [38;2;85;85;255m | '_ \ / /  / _ \ / _` | | '_ \ [0m
+[06:20:15 INFO]: [nLogin] [38;2;85;85;255m | | | / /__| (_) | (_| | | | | |[0m
+[06:20:15 INFO]: [nLogin] [38;2;85;85;255m |_| |_\____/\___/ \__, |_|_| |_|[0m
+[06:20:15 INFO]: [nLogin] [38;2;85;85;255m                  |___/            [0m
+[06:20:15 INFO]: [nLogin] [38;2;85;85;255m By: www.nickuc.com - V 2.0.19[0m
+[06:20:15 INFO]: [nLogin] [38;2;85;85;255m [0m
+[06:20:18 INFO] [nlogin]: Loading packetevents-velocity 2.13.0...
+[06:20:27 INFO] [nlogin]: Download finished (signature = OK, hash = 689f3fad248f72f2727bfec8f565ee9d7d2aa151aa7e60ab5c87530877cdd1ba, took 12218ms)
+[06:20:33 WARN]: The server channel initializer has been replaced by java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+[06:20:39 INFO] [viaversion]: Replacing channel initializers; you can safely ignore the following two warnings.
+[06:20:39 WARN]: The server channel initializer has been replaced by java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+[06:20:39 WARN]: The backend channel initializer has been replaced by java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+[06:20:39 INFO] [viabackwards]: Loading translations...
+[06:20:39 INFO] [viabackwards]: Registering protocols...
+[06:20:41 INFO] [viaversion]: ViaVersion detected lowest supported version by the proxy: 1.13 (393)
+[06:20:41 INFO] [viaversion]: Highest supported version by the proxy: 26.2 (776)
+[06:20:41 INFO] [nantibot]: Injecting channel initializers
+[06:20:41 WARN]: The server channel initializer has been replaced by java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+[06:20:41 INFO] [eaglerxserver]: Listener "listener0" injected into channel [id: 0xacac0e6d, L:/[0:0:0:0:0:0:0:0]:25565] successfully (Velocity method)
+[06:20:41 INFO]: Listening on /[0:0:0:0:0:0:0:0]:25565
+[06:20:41 INFO] [nantibot]: Connecting to the remote server antibot.nickuc.com...
+[06:20:41 INFO]: Done (56.01s)!
+[06:20:41 WARN] [viaversion]: There is a newer plugin version available: 5.12.1, you're on: 5.11.0
+[06:20:42 INFO] [viaversion]: Finished mapping loading, shutting down loader executor.
+[06:20:43 INFO] [nantibot]: [Captcha] Captchas generated successfully. (RAM usage ≃ 8 MB [static only], total = 500, protocol count = 51, threads = 2, took 33.71s)

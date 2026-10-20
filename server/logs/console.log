@@ -1,0 +1,114 @@
+Starting org.bukkit.craftbukkit.Main
+2026-10-20T06:19:46.699858644Z ServerMain WARN Advanced terminal features are not available in this environment
+[06:19:48 INFO]: [bootstrap] Running Java 25 (OpenJDK 64-Bit Server VM 25.0.4.1+1-LTS; Microsoft Microsoft-14951822) on Linux 6.8.0-1064-azure (amd64)
+[06:19:48 INFO]: [bootstrap] Loading Paper 26.2-111-main@f570646 (2026-08-07T16:16:19Z) for Minecraft 26.2
+[06:19:48 INFO]: [PluginInitializerManager] Initializing plugins...
+[06:19:52 INFO]: [PluginInitializerManager] Initialized 4 plugins
+[06:19:52 INFO]: [PluginInitializerManager] Bukkit plugins (4):
+ - AxSmithing (1.9), TuffXPlus (1.1.1), ViaBackwards (5.11.0), ViaVersion (5.11.0)
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.joml.MemUtil$MemUtilUnsafe (file:/workspaces/eaglercraft-26.2/server/libraries/org/joml/joml/1.10.8/joml-1.10.8.jar)
+WARNING: Please consider reporting this to the maintainers of class org.joml.MemUtil$MemUtilUnsafe
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[06:20:25 INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Initialising converters for DataConverter...
+[06:20:26 INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
+[06:20:31 INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Finished initialising converters for DataConverter in 5,907.0ms
+[06:20:48 INFO]: Loaded 1585 recipes
+[06:20:48 INFO]: Loaded 1688 advancements
+[06:20:50 INFO]: Starting minecraft server version 26.2
+[06:20:50 INFO]: Loading properties
+[06:20:50 INFO]: This server is running Paper version 26.2-111-main@f570646 (2026-08-07T16:16:19Z) (Implementing API version 26.2.build.111-stable)
+[06:20:51 INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
+[06:20:51 INFO]: Server Ping Player Sample Count: 12
+[06:20:51 INFO]: Using 4 threads for Netty based IO
+[06:20:53 INFO]: [MoonriseCommon] Paper is using 1 worker threads, 1 I/O threads
+[06:20:54 INFO]: Default game type: SURVIVAL
+[06:20:54 INFO]: Generating keypair
+[06:20:54 INFO]: Starting Minecraft server on *:25567
+[06:20:54 INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+[06:20:54 INFO]: Paper: Using OpenSSL 3.x.x (Linux x86_64) cipher from Velocity.
+[06:20:56 INFO]: [ViaVersion] Loading server plugin ViaVersion v5.11.0
+[06:20:56 INFO]: [ViaVersion] ViaVersion 5.11.0 is now loaded. Registering protocol transformers and injecting...
+[06:21:00 INFO]: [ViaBackwards] Loading translations...
+[06:21:00 INFO]: [ViaBackwards] Registering protocols...
+[06:21:01 INFO]: [ViaBackwards] Loading server plugin ViaBackwards v5.11.0
+[06:21:01 INFO]: [TuffXPlus] Loading server plugin TuffXPlus v1.1.1
+[06:21:05 INFO]: [38;2;85;255;255m[packetevents] [0mLoading packetevents...
+[06:21:12 INFO]: [38;2;85;255;255m[packetevents] [0mLoaded packetevents v2.13.0 for TuffXPlus
+[06:21:12 INFO]: [AxSmithing] Loading server plugin AxSmithing v1.9
+[06:21:12 WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[06:21:12 WARN]: The server will make no attempt to authenticate usernames. Beware.
+[06:21:12 WARN]: Whilst this makes it possible to use Velocity, unless access to your server is properly restricted, it also opens up the ability for hackers to connect with any username they choose.
+[06:21:12 WARN]: Please see https://docs.papermc.io/velocity/security for further information.
+[06:21:12 WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[06:21:12 INFO]: Preparing level "world"
+[06:21:13 INFO]: Loading 0 persistent chunks for level 'minecraft:overworld'...
+[06:21:13 INFO]: Preparing spawn area: 100%
+[06:21:13 INFO]: Prepared spawn area in 5 ms
+[06:21:13 INFO]: Loading 0 persistent chunks for level 'minecraft:the_nether'...
+[06:21:13 INFO]: Preparing spawn area: 100%
+[06:21:13 INFO]: Prepared spawn area in 3 ms
+[06:21:13 INFO]: Loading 0 persistent chunks for level 'minecraft:the_end'...
+[06:21:13 INFO]: Preparing spawn area: 100%
+[06:21:13 INFO]: Prepared spawn area in 8 ms
+[06:21:13 INFO]: Done preparing level "world" (1.711s)
+[06:21:13 INFO]: [ViaVersion] Enabling ViaVersion v5.11.0
+[06:21:13 INFO]: [ViaVersion] ViaVersion detected server version: 26.2 (776)
+[06:21:13 INFO]: [ViaBackwards] Enabling ViaBackwards v5.11.0
+[06:21:13 INFO]: [TuffXPlus] Enabling TuffXPlus v1.1.1
+[06:21:13 INFO]: [TuffXPlus] Using standard Bukkit-compatible schedulers.
+[06:21:13 INFO]: [TuffXPlus] [Y0] Server Minecraft Version: 26.2
+[06:21:15 INFO]: [TuffXPlus] [TuffActions] Successfully loaded 1326 creative tab mappings.
+[06:21:15 INFO]: [TuffXPlus] [TuffActions] TuffActions has been enabled
+[06:21:15 INFO]: [TuffXPlus] [TuffActions] Enabling features...
+[06:21:15 INFO]: [TuffXPlus] [TuffActions] Swimming enabled.
+[06:21:15 INFO]: [TuffXPlus] [TuffActions] Creative Items enabled.
+[06:21:15 INFO]: [TuffXPlus] [TuffActions] Loading Restrictions config...
+[06:21:15 INFO]: [TuffXPlus] [TuffActions] Restrictions enabled.
+[06:21:15 INFO]: [TuffXPlus] [TuffActions] Finished enabling features.
+[06:21:15 INFO]: [TuffXPlus] [ViaBlocks] Generating ViaBlocks Pre-Defined Palette...
+[06:21:15 INFO]: [TuffXPlus] [ViaBlocks] Palette initialized with 649 entries.
+[06:21:15 INFO]: [TuffXPlus] [ViaBlocks] ViaBlocks has been enabled successfully and is listening for client handshakes.
+[06:21:15 INFO]: [TuffXPlus] [ViaEntities] ViaEntities enabled with 43 modern entities
+[06:21:15 INFO]: [TuffXPlus] 
+[06:21:15 INFO]: [TuffXPlus] ████████╗██╗   ██╗███████╗ ███████╗ ██╗  ██╗     ██╗
+[06:21:15 INFO]: [TuffXPlus] ╚══██╔══╝██║   ██║██╔════╝ ██╔════╝ ╚██╗██╔╝     ██║
+[06:21:15 INFO]: [TuffXPlus]    ██║   ██║   ██║██████╗  ██████╗   ╚███╔╝ ████████████╗
+[06:21:15 INFO]: [TuffXPlus]    ██║   ██║   ██║██╔═══╝  ██╔═══╝   ██╔██╗ ╚════██╔════╝
+[06:21:15 INFO]: [TuffXPlus]    ██║   ╚██████╔╝██║      ██║      ██╔╝╚██╗     ██║
+[06:21:15 INFO]: [TuffXPlus]    ╚═╝    ╚═════╝ ╚═╝      ╚═╝      ╚═╝  ╚═╝     ╚═╝
+[06:21:15 INFO]: [TuffXPlus] 
+[06:21:15 INFO]: [TuffXPlus] CREDITS
+[06:21:15 INFO]: [TuffXPlus] 
+[06:21:15 INFO]: [TuffXPlus] Y0 support:
+[06:21:15 INFO]: [TuffXPlus] • Below y0 (client + plugin) programmed by Potato (@justatypicalpotato)
+[06:21:15 INFO]: [TuffXPlus] • llucasandersen - plugin optimizations
+[06:21:15 INFO]: [TuffXPlus] 
+[06:21:15 INFO]: [TuffXPlus] ViaBlocks:
+[06:21:15 INFO]: [TuffXPlus] • ViaBlocks partial plugin and client rewrite by Potato
+[06:21:15 INFO]: [TuffXPlus] • llucasandersen (Complex client models and texture fixes,
+[06:21:15 INFO]: [TuffXPlus] 	  optimizations, PacketEvents migration and async safety fixes)
+[06:21:15 INFO]: [TuffXPlus] • coleis1op, if ts is driving me crazy, im taking credit
+[06:21:15 INFO]: [TuffXPlus] 
+[06:21:15 INFO]: [TuffXPlus] Other:
+[06:21:15 INFO]: [TuffXPlus] • Swimming and creative items programmed by Potato (@justatypicalpotato)
+[06:21:15 INFO]: [TuffXPlus] • shaded build, 1.14+ support (before merge) - llucasandersen
+[06:21:15 INFO]: [TuffXPlus] • Restrictions - UplandJacob
+[06:21:15 INFO]: [TuffXPlus] • Overall plugin merges by Potato
+[06:21:15 INFO]: [AxSmithing] Enabling AxSmithing v1.9
+[06:21:16 INFO]: [spark] Starting background profiler...
+[06:21:18 INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[06:21:18 INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+[06:21:18 INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+[06:21:18 INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[06:21:18 INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[06:21:18 INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[06:21:18 INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[06:21:18 INFO]: Running delayed init tasks
+[06:21:18 INFO]: [TuffXPlus] [Y0] Loading mappings from 26.2-mappings.json
+[06:21:18 INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor.
+[06:21:20 INFO]: [TuffXPlus] [Y0] Loaded 29671 legacy mappings.
+[06:21:20 WARN]: [ViaVersion] There is a newer plugin version available: 5.12.1, you're on: 5.11.0
+[06:21:20 INFO]: Done (97.156s)! For help, type "help"
+[06:21:20 WARN]: *** You are running an outdated version of Minecraft, which is 2 releases and 23 builds behind!
+[06:21:20 WARN]: *** Please update to the latest stable version on https://papermc.io/downloads/paper ***
