@@ -280,6 +280,12 @@ Because the server runs through GitHub Codespaces, development and server manage
 
 You can modify the project, restart the server, test changes, and work on the configuration without leaving your Codespace.
 
+### Static dashboard on GitHub Pages
+
+The repository's root [`index.html`](./index.html) is a standalone server-dashboard demo. To publish it, open **Settings → Pages** on GitHub and select the `main` branch and `/ (root)` as the build source.
+
+The dashboard is a static, browser-only mockup: its start/stop controls, console, settings, files, and player records do not control this Codespaces server. Demo edits are saved in the visitor's browser. Controlling a real server requires a separately hosted backend with authenticated server-side access; GitHub Pages alone cannot run the server or edit its files.
+
 ---
 
 ## 📌 Important Notes
