@@ -81,3 +81,8 @@
 [07:28:47] [Server thread/INFO]: MrGuy987 fell out of the world
 [07:28:50] [Server thread/INFO]: MrGuy987 lost connection: Disconnected
 [07:28:50] [Server thread/INFO]: MrGuy987 left the game
+[07:29:26] [User Authenticator #2/INFO]: UUID of player MrGuy987 is 1e921d2d-4ec0-3874-aeb6-f04b090ec0ec
+[07:29:26] [Server thread/INFO]: MrGuy987 joined the game
+[07:29:26] [Server thread/INFO]: MrGuy987[/[0:0:0:0:0:0:0:1]:54352] logged in with entity id 3 at ([minecraft:overworld]8.5, -278.2242386078576, 8.5)
+[07:29:46] [Server thread/INFO]: MrGuy987 lost connection: Disconnected
+[07:29:46] [Server thread/INFO]: MrGuy987 left the game
