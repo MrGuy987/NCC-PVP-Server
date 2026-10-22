@@ -3,14 +3,14 @@
 <a href="https://docs.google.com/document/d/1TkJUnf5_cWN-4fKtNoRx7iSjIxenmBt01bUq8b_cgLk/edit?tab=t.0">Stuff to start Server</a>
 #How to Start the Server
 
-To Start Server (Each line is in a different terminal)
-  cd /workspaces/eaglercraft-26.2/server && java -Xms1G -Xmx2G -jar paper.jar nogui
-  cd /workspaces/eaglercraft-26.2/limbo && java -Xms768M -Xmx1536M -jar paper.jar nogui
-  cd /workspaces/eaglercraft-26.2/velocity && java -Xms512M -Xmx1G -jar velocity.jar
+To Start Server (Each line is in a different terminal)\n
+  cd /workspaces/eaglercraft-26.2/server && java -Xms1G -Xmx2G -jar paper.jar nogui\n
+  cd /workspaces/eaglercraft-26.2/limbo && java -Xms768M -Xmx1536M -jar paper.jar nogui\n
+  cd /workspaces/eaglercraft-26.2/velocity && java -Xms512M -Xmx1G -jar velocity.jar\n
 
-To see server console: 
-  cd /workspaces/eaglercraft-26.2
-  tail -F velocity/logs/latest.log server/logs/latest.log limbo/logs/latest.log
+To see server console: \n
+  cd /workspaces/eaglercraft-26.2\n
+  tail -F velocity/logs/latest.log server/logs/latest.log limbo/logs/latest.log\n
 
 
 A Minecraft **26.2 server** designed to run through **GitHub Codespaces**, with support for both **normal Minecraft** and **EaglerCraft**.
