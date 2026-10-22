@@ -1,0 +1,20 @@
+{
+    "worldedit.clearhistory.cleared": "تاریخچه پاک شد.",
+    "worldedit.raytrace.noblock": "هیچ بلاکی در دید نیست!",
+    "worldedit.restore.block-place-error": "آخرین خطا: {0}",
+    "worldedit.hpos.no-block": "هیچ بلاکی در دید نیست!",
+    "worldedit.size.type": "نوع: {0}",
+    "worldedit.size.size": "اندازه: {0}",
+    "worldedit.tool.no-block": "هیچ بلاکی در دید نیست!",
+    "worldedit.selection.ellipsoid.info.center": "وسط: {0}",
+    "worldedit.selection.cylinder.info.center": "وسط: {0}",
+    "worldedit.selection.cylinder.info.radius": "قطر: {0}",
+    "worldedit.sideeffect.lighting": "روشنایی",
+    "worldedit.sideeffect.neighbors": "همسایه ها",
+    "worldedit.sideeffect.update": "به‌روزرسانی",
+    "worldedit.sideeffect.state.on": "روشن",
+    "worldedit.sideeffect.state.delayed": "تاخیر افتاده",
+    "worldedit.sideeffect.state.off": "خاموش",
+    "worldedit.sideeffect.box.current": "در حال حاضر",
+    "worldedit.cli.unknown-command": "دستور نامفهوم!"
+}
