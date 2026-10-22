@@ -1,0 +1,16 @@
+[2026/10/22 05:14:29 INFO]:           __             _       
+[2026/10/22 05:14:29 INFO]:   _ __   / /  ___   __ _(_)_ __  
+[2026/10/22 05:14:29 INFO]:  | '_ \ / /  / _ \ / _` | | '_ \ 
+[2026/10/22 05:14:29 INFO]:  | | | / /__| (_) | (_| | | | | |
+[2026/10/22 05:14:29 INFO]:  |_| |_\____/\___/ \__, |_|_| |_|
+[2026/10/22 05:14:29 INFO]:                   |___/            
+[2026/10/22 05:14:29 INFO]:  By: www.nickuc.com - V 2.0.19
+[2026/10/22 05:14:29 INFO]:  
+[2026/10/22 05:14:31 DEBUG]: Loading the messages_en.yml message file...
+[2026/10/22 05:14:31 DEBUG]: Messages were loaded in 740 ms (single file).
+[2026/10/22 05:14:31 DEBUG]: Settings were loaded in 1062 ms.
+[2026/10/22 05:14:31 DEBUG]: Loading database...
+[2026/10/22 05:14:32 DEBUG]: Starting logger filter...
+[2026/10/22 05:14:32 INFO]: Loading packetevents-velocity 2.13.0...
+[2026/10/22 05:25:35 DEBUG]: [SQLite] [UPDATE]: "UPDATE `nlogin` SET `last_name` = 'MrGuy987', `unique_id` = 1e921d2d4ec03874aeb6f04b090ec0ec,  `mojang_id` = null,  `bedrock_id` = null,  `password` = '$argon2id$v=19$m=32768,t=5,p=1$EswOPSBfLpnhvmRBmIjWPA$jwJ18GzG8IAt1zeWGO5fytxpeQlEeA0FhAhRPK5dEjI', `last_ip` = '0:0:0:0:0:0:0:1', `creation_date` = 2026-10-20 07:25:56.493, `last_seen` = 2026-10-22 05:25:35.879, `email` = null, `discord` = null, `settings` = '{"settings":[{"value":"survival","key":"last-server"},{"value":"en","key":"language"}],"version":0}' WHERE `ai` = 4" (applied to [last_ip, last_seen, settings] columns)
+[2026/10/22 05:25:35 INFO]: The user MrGuy987 has successfully logged in.
