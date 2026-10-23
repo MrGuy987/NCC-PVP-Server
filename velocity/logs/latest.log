@@ -94,3 +94,5 @@ javax.imageio.IIOException: Can't read input file!
 [05:25:35] [nLogin - Task Executor #6/INFO] [nlogin]: The user MrGuy987 has successfully logged in.
 [05:25:36] [Netty epoll Worker #0/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] MrGuy987 -> survival has connected
 [05:25:37] [Netty epoll Worker #0/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] MrGuy987 -> auth has disconnected
+[05:32:23] [Netty epoll Worker #0/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [connected player] MrGuy987 (/[0:0:0:0:0:0:0:1]:59232) has disconnected
+[05:32:23] [Netty epoll Worker #0/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] MrGuy987 -> survival has disconnected
