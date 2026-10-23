@@ -1,7 +1,7 @@
 # ⛏️ Minecraft 26.2 Server
 
 <a href="https://docs.google.com/document/d/1TkJUnf5_cWN-4fKtNoRx7iSjIxenmBt01bUq8b_cgLk/edit?tab=t.0">Stuff to start Server</a>
-#How to Start the Server
+
 
 ### How to Start the Servers
 Run each of the following commands in a **separate terminal**:
