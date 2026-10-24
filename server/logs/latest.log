@@ -1,400 +1,451 @@
-[03:51:51] [ServerMain/INFO]: [bootstrap] Running Java 25 (OpenJDK 64-Bit Server VM 25.0.4.1+1-LTS; Microsoft Microsoft-14951822) on Linux 6.8.0-1064-azure (amd64)
-[03:51:51] [ServerMain/INFO]: [bootstrap] Loading Paper 26.2-111-main@f570646 (2026-08-07T16:16:19Z) for Minecraft 26.2
-[03:51:51] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
-[03:51:51] [ServerMain/INFO]: [PluginInitializerManager] Initialized 6 plugins
-[03:51:51] [ServerMain/INFO]: [PluginInitializerManager] Bukkit plugins (6):
+[04:02:58] [ServerMain/INFO]: [bootstrap] Running Java 25 (OpenJDK 64-Bit Server VM 25.0.4.1+1-LTS; Microsoft Microsoft-14951822) on Linux 6.8.0-1064-azure (amd64)
+[04:02:58] [ServerMain/INFO]: [bootstrap] Loading Paper 26.2-111-main@f570646 (2026-08-07T16:16:19Z) for Minecraft 26.2
+[04:02:58] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
+[04:02:59] [ServerMain/INFO]: [PluginInitializerManager] Initialized 6 plugins
+[04:02:59] [ServerMain/INFO]: [PluginInitializerManager] Bukkit plugins (6):
  - AxSmithing (1.9), LuckPerms (5.5.88), PlayerKits2 (1.24.1), TuffXPlus (1.1.1), ViaBackwards (5.11.0), ViaVersion (5.11.0)
-[03:51:58] [DataConverter MCTypeRegistry init thread/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Initialising converters for DataConverter...
-[03:51:58] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
-[03:52:00] [DataConverter MCTypeRegistry init thread/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Finished initialising converters for DataConverter in 1,861.2ms
-[03:52:04] [ServerMain/INFO]: Loaded 1585 recipes
-[03:52:04] [ServerMain/INFO]: Loaded 1688 advancements
-[03:52:04] [Server thread/INFO]: Starting minecraft server version 26.2
-[03:52:04] [Server thread/INFO]: Loading properties
-[03:52:04] [Server thread/INFO]: This server is running Paper version 26.2-111-main@f570646 (2026-08-07T16:16:19Z) (Implementing API version 26.2.build.111-stable)
-[03:52:04] [Server thread/INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
-[03:52:05] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[03:52:05] [Server thread/INFO]: Using 4 threads for Netty based IO
-[03:52:05] [Server thread/INFO]: [MoonriseCommon] Paper is using 1 worker threads, 1 I/O threads
-[03:52:06] [Server thread/INFO]: Default game type: SURVIVAL
-[03:52:06] [Server thread/INFO]: Generating keypair
-[03:52:06] [Server thread/INFO]: Starting Minecraft server on *:25567
-[03:52:06] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
-[03:52:06] [Server thread/INFO]: Paper: Using OpenSSL 3.x.x (Linux x86_64) cipher from Velocity.
-[03:52:07] [Server thread/INFO]: [ViaVersion] Loading server plugin ViaVersion v5.11.0
-[03:52:07] [Server thread/INFO]: [ViaVersion] ViaVersion 5.11.0 is now loaded. Registering protocol transformers and injecting...
-[03:52:09] [Server thread/INFO]: [ViaBackwards] Loading translations...
-[03:52:09] [Server thread/INFO]: [ViaBackwards] Registering protocols...
-[03:52:09] [Server thread/INFO]: [ViaBackwards] Loading server plugin ViaBackwards v5.11.0
-[03:52:09] [Server thread/INFO]: [TuffXPlus] Loading server plugin TuffXPlus v1.1.1
-[03:52:10] [Server thread/INFO]: [packetevents] Loading packetevents...
-[03:52:13] [Server thread/INFO]: [packetevents] Loaded packetevents v2.13.0 for TuffXPlus
-[03:52:13] [Server thread/INFO]: [AxSmithing] Loading server plugin AxSmithing v1.9
-[03:52:13] [Server thread/INFO]: [LuckPerms] Loading server plugin LuckPerms v5.5.88
-[03:52:14] [Server thread/INFO]: [LuckPerms] Loading configuration...
-[03:52:14] [Server thread/INFO]: [PlayerKits2] Loading server plugin PlayerKits2 v1.24.1
-[03:52:14] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.5.88
-[03:52:14] [Server thread/INFO]:         __    
-[03:52:14] [Server thread/INFO]:   |    |__)   LuckPerms v5.5.88
-[03:52:14] [Server thread/INFO]:   |___ |      Running on Bukkit - Paper
-[03:52:14] [Server thread/INFO]: 
-[03:52:14] [Server thread/INFO]: [LuckPerms] Loading storage provider... [H2]
-[03:52:15] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
-[03:52:15] [Server thread/INFO]: [LuckPerms] Performing initial data load...
-[03:52:15] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 1536ms)
-[03:52:15] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[03:52:15] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[03:52:15] [Server thread/WARN]: Whilst this makes it possible to use Velocity, unless access to your server is properly restricted, it also opens up the ability for hackers to connect with any username they choose.
-[03:52:15] [Server thread/WARN]: Please see https://docs.papermc.io/velocity/security for further information.
-[03:52:15] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[03:52:15] [Server thread/INFO]: Preparing level "world"
-[03:52:17] [Server thread/INFO]: Loading 0 persistent chunks for level 'minecraft:overworld'...
-[03:52:17] [Server thread/INFO]: Preparing spawn area: 100%
-[03:52:17] [Server thread/INFO]: Prepared spawn area in 5 ms
-[03:52:17] [Server thread/INFO]: Loading 0 persistent chunks for level 'minecraft:the_nether'...
-[03:52:17] [Server thread/INFO]: Prepared spawn area in 2 ms
-[03:52:17] [Server thread/INFO]: Loading 0 persistent chunks for level 'minecraft:the_end'...
-[03:52:17] [Server thread/INFO]: Prepared spawn area in 5 ms
-[03:52:17] [Server thread/INFO]: Done preparing level "world" (1.474s)
-[03:52:17] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v5.11.0
-[03:52:17] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 26.2 (776)
-[03:52:17] [Server thread/INFO]: [ViaBackwards] Enabling ViaBackwards v5.11.0
-[03:52:17] [Server thread/INFO]: [TuffXPlus] Enabling TuffXPlus v1.1.1
-[03:52:17] [Server thread/INFO]: [TuffXPlus] Using standard Bukkit-compatible schedulers.
-[03:52:17] [Server thread/INFO]: [TuffXPlus] [Y0] Server Minecraft Version: 26.2
-[03:52:18] [Server thread/INFO]: [TuffXPlus] [TuffActions] Successfully loaded 1326 creative tab mappings.
-[03:52:18] [Server thread/INFO]: [TuffXPlus] [TuffActions] TuffActions has been enabled
-[03:52:18] [Server thread/INFO]: [TuffXPlus] [TuffActions] Enabling features...
-[03:52:18] [Server thread/INFO]: [TuffXPlus] [TuffActions] Swimming enabled.
-[03:52:18] [Server thread/INFO]: [TuffXPlus] [TuffActions] Creative Items enabled.
-[03:52:18] [Server thread/INFO]: [TuffXPlus] [TuffActions] Loading Restrictions config...
-[03:52:18] [Server thread/INFO]: [TuffXPlus] [TuffActions] Restrictions enabled.
-[03:52:18] [Server thread/INFO]: [TuffXPlus] [TuffActions] Finished enabling features.
-[03:52:18] [Server thread/INFO]: [TuffXPlus] [ViaBlocks] Generating ViaBlocks Pre-Defined Palette...
-[03:52:18] [Server thread/INFO]: [TuffXPlus] [ViaBlocks] Palette initialized with 649 entries.
-[03:52:18] [Server thread/INFO]: [TuffXPlus] [ViaBlocks] ViaBlocks has been enabled successfully and is listening for client handshakes.
-[03:52:18] [Server thread/INFO]: [TuffXPlus] [ViaEntities] ViaEntities enabled with 43 modern entities
-[03:52:18] [Server thread/INFO]: [TuffXPlus] 
-[03:52:18] [Server thread/INFO]: [TuffXPlus] ████████╗██╗   ██╗███████╗ ███████╗ ██╗  ██╗     ██╗
-[03:52:18] [Server thread/INFO]: [TuffXPlus] ╚══██╔══╝██║   ██║██╔════╝ ██╔════╝ ╚██╗██╔╝     ██║
-[03:52:18] [Server thread/INFO]: [TuffXPlus]    ██║   ██║   ██║██████╗  ██████╗   ╚███╔╝ ████████████╗
-[03:52:18] [Server thread/INFO]: [TuffXPlus]    ██║   ██║   ██║██╔═══╝  ██╔═══╝   ██╔██╗ ╚════██╔════╝
-[03:52:18] [Server thread/INFO]: [TuffXPlus]    ██║   ╚██████╔╝██║      ██║      ██╔╝╚██╗     ██║
-[03:52:18] [Server thread/INFO]: [TuffXPlus]    ╚═╝    ╚═════╝ ╚═╝      ╚═╝      ╚═╝  ╚═╝     ╚═╝
-[03:52:18] [Server thread/INFO]: [TuffXPlus] 
-[03:52:18] [Server thread/INFO]: [TuffXPlus] CREDITS
-[03:52:18] [Server thread/INFO]: [TuffXPlus] 
-[03:52:18] [Server thread/INFO]: [TuffXPlus] Y0 support:
-[03:52:18] [Server thread/INFO]: [TuffXPlus] • Below y0 (client + plugin) programmed by Potato (@justatypicalpotato)
-[03:52:18] [Server thread/INFO]: [TuffXPlus] • llucasandersen - plugin optimizations
-[03:52:18] [Server thread/INFO]: [TuffXPlus] 
-[03:52:18] [Server thread/INFO]: [TuffXPlus] ViaBlocks:
-[03:52:18] [Server thread/INFO]: [TuffXPlus] • ViaBlocks partial plugin and client rewrite by Potato
-[03:52:18] [Server thread/INFO]: [TuffXPlus] • llucasandersen (Complex client models and texture fixes,
-[03:52:18] [Server thread/INFO]: [TuffXPlus] 	  optimizations, PacketEvents migration and async safety fixes)
-[03:52:18] [Server thread/INFO]: [TuffXPlus] • coleis1op, if ts is driving me crazy, im taking credit
-[03:52:18] [Server thread/INFO]: [TuffXPlus] 
-[03:52:18] [Server thread/INFO]: [TuffXPlus] Other:
-[03:52:18] [Server thread/INFO]: [TuffXPlus] • Swimming and creative items programmed by Potato (@justatypicalpotato)
-[03:52:18] [Server thread/INFO]: [TuffXPlus] • shaded build, 1.14+ support (before merge) - llucasandersen
-[03:52:18] [Server thread/INFO]: [TuffXPlus] • Restrictions - UplandJacob
-[03:52:18] [Server thread/INFO]: [TuffXPlus] • Overall plugin merges by Potato
-[03:52:18] [Server thread/INFO]: [AxSmithing] Enabling AxSmithing v1.9
-[03:52:18] [Server thread/INFO]: [PlayerKits2] Enabling PlayerKits2 v1.24.1
-[03:52:19] [Server thread/INFO]: [PlayerKits²] Has been enabled! Version: 1.24.1
-[03:52:19] [Server thread/INFO]: [PlayerKits²] Thanks for using my plugin!   ~Ajneb97
-[03:52:19] [Server thread/INFO]: There is a new version available. (1.24.2)
-[03:52:19] [Server thread/INFO]: You can download it at: https://modrinth.com/plugin/playerkits-2
-[03:52:19] [Server thread/INFO]: [spark] Starting background profiler...
-[03:52:20] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[03:52:20] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
-[03:52:20] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
-[03:52:20] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[03:52:20] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[03:52:20] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[03:52:20] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
-[03:52:20] [Server thread/INFO]: Running delayed init tasks
-[03:52:20] [Server thread/INFO]: [TuffXPlus] [Y0] Loading mappings from 26.2-mappings.json
-[03:52:20] [Craft Scheduler Thread - 2 - ViaVersion/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor.
-[03:52:21] [Server thread/INFO]: [TuffXPlus] [Y0] Loaded 29671 legacy mappings.
-[03:52:21] [Server thread/WARN]: [ViaVersion] There is a newer plugin version available: 5.12.1, you're on: 5.11.0
-[03:52:21] [Server thread/INFO]: Done (31.773s)! For help, type "help"
-[03:52:21] [Paper Async Task Handler Thread - 1/WARN]: *** You are running an outdated version of Minecraft, which is 2 releases and 23 builds behind!
-[03:52:21] [Paper Async Task Handler Thread - 1/WARN]: *** Please update to the latest stable version on https://papermc.io/downloads/paper ***
-[03:52:43] [Server thread/INFO]: --------- Help: Index ---------------------------------
-[03:52:43] [Server thread/INFO]: Use /help [n] to get page n of help.
-[03:52:43] [Server thread/INFO]: Aliases: Lists command aliases
-[03:52:43] [Server thread/INFO]: AxSmithing: All commands for AxSmithing
-[03:52:43] [Server thread/INFO]: Bukkit: All commands for Bukkit
-[03:52:43] [Server thread/INFO]: LuckPerms: All commands for LuckPerms
-[03:52:43] [Server thread/INFO]: Minecraft: All commands for Minecraft
-[03:52:43] [Server thread/INFO]: Paper: All commands for Paper
-[03:52:43] [Server thread/INFO]: PlayerKits2: All commands for PlayerKits2
-[03:52:43] [Server thread/INFO]: TuffXPlus: All commands for TuffXPlus
-[03:52:43] [Server thread/INFO]: ViaVersion: All commands for ViaVersion
-[03:52:43] [Server thread/INFO]: /about: Gets the version of this server including any plugins in use
-[03:52:43] [Server thread/INFO]: /advancement: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /attribute: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /axsmithing: 
-[03:52:43] [Server thread/INFO]: /ban: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /ban-ip: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /banlist: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /bossbar: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /bukkit:about: Gets the version of this server including any plugins in use
-[03:52:43] [Server thread/INFO]: /bukkit:pl: Gets a list of plugins running on the server
-[03:52:43] [Server thread/INFO]: /bukkit:plugins: Gets a list of plugins running on the server
-[03:52:43] [Server thread/INFO]: /bukkit:ver: Gets the version of this server including any plugins in use
-[03:52:43] [Server thread/INFO]: /bukkit:version: Gets the version of this server including any plugins in use
-[03:52:43] [Server thread/INFO]: /clear: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /clone: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /damage: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /data: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /datapack: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /debug: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /defaultgamemode: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /deop: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /dialog: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /difficulty: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /effect: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /enchant: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /execute: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /experience: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /fetchprofile: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /fill: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /fillbiome: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /forceload: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /function: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /gamemode: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /gamerule: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /give: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /help: Shows the help menu
-[03:52:43] [Server thread/INFO]: /item: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /jfr: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /kick: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /kill: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /kit: Main command of PlayerKits2
-[03:52:43] [Server thread/INFO]: /list: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /locate: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /loot: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /luckperms: Manage permissions
-[03:52:43] [Server thread/INFO]: /me: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:advancement: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:attribute: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:ban: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:ban-ip: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:banlist: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:bossbar: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:clear: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:clone: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:damage: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:data: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:datapack: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:debug: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:defaultgamemode: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:deop: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:dialog: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:difficulty: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:effect: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:enchant: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:execute: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:experience: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:fetchprofile: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:fill: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:fillbiome: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:forceload: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:function: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:gamemode: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:gamerule: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:give: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:help: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:item: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:jfr: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:kick: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:kill: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:list: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:locate: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:loot: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:me: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:msg: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:op: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:pardon: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:pardon-ip: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:particle: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:perf: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:place: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:playsound: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:random: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:recipe: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:reload: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:return: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:ride: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:rotate: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:save-all: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:save-off: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:save-on: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:say: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:schedule: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:scoreboard: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:seed: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:setblock: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:setidletimeout: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:setworldspawn: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:spawnpoint: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:spectate: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:spreadplayers: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:stop: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:stopsound: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:stopwatch: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:summon: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:swing: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:tag: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:team: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:teammsg: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:teleport: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:tell: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:tellraw: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:test: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:tick: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:time: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:title: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:tm: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:tp: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:transfer: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:trigger: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:version: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:w: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:waypoint: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:weather: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:whitelist: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:worldborder: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /minecraft:xp: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /msg: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /mspt: View server tick times
-[03:52:43] [Server thread/INFO]: /op: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /paper: Paper related commands
-[03:52:43] [Server thread/INFO]: /paper:mspt: View server tick times
-[03:52:43] [Server thread/INFO]: /paper:spark: 
-[03:52:43] [Server thread/INFO]: /pardon: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /pardon-ip: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /particle: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /perf: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /pl: Gets a list of plugins running on the server
-[03:52:43] [Server thread/INFO]: /place: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /playsound: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /plugins: Gets a list of plugins running on the server
-[03:52:43] [Server thread/INFO]: /random: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /recipe: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /reload: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /restart: Restarts the server
-[03:52:43] [Server thread/INFO]: /restrictions: Allow or disallow TuffClient modules.
-[03:52:43] [Server thread/INFO]: /return: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /ride: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /rotate: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /save-all: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /save-off: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /save-on: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /say: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /schedule: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /scoreboard: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /seed: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /setblock: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /setidletimeout: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /setworldspawn: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /spark: 
-[03:52:43] [Server thread/INFO]: /spawnpoint: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /spectate: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /spigot: Spigot related commands
-[03:52:43] [Server thread/INFO]: /spreadplayers: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /stop: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /stopsound: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /stopwatch: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /summon: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /swing: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /tag: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /team: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /teammsg: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /teleport: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /tell: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /tellraw: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /test: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /tick: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /time: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /timings: Manages Spigot Timings data to see performance of the server.
-[03:52:43] [Server thread/INFO]: /title: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /tm: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /tp: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /tps: Gets the current ticks per second for the server
-[03:52:43] [Server thread/INFO]: /transfer: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /trigger: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /tuffx: Main command for TuffX.
-[03:52:43] [Server thread/INFO]: /ver: Gets the version of this server including any plugins in use
-[03:52:43] [Server thread/INFO]: /version: Gets the version of this server including any plugins in use
-[03:52:43] [Server thread/INFO]: /viablocks: Main command for ViaBlocks.
-[03:52:43] [Server thread/INFO]: /viaversion: Shows ViaVersion Version and more.
-[03:52:43] [Server thread/INFO]: /w: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /waypoint: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /weather: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /whitelist: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /worldborder: A Mojang provided command.
-[03:52:43] [Server thread/INFO]: /xp: A Mojang provided command.
-[03:54:39] [User Authenticator #0/INFO]: UUID of player MrGuy987 is 1e921d2d-4ec0-3874-aeb6-f04b090ec0ec
-[03:54:39] [Server thread/INFO]: [HorriblePlayerLoginEventHack] You have plugins listening to the PlayerLoginEvent, this will cause re-configuration APIs to be unavailable: [LuckPerms]
-[03:55:06] [Server thread/INFO]: MrGuy987 (1e921d2d-4ec0-3874-aeb6-f04b090ec0ec) lost connection: Disconnected
-[03:56:55] [Server thread/INFO]: Stopping server
-[03:56:55] [Server thread/INFO]: [PlayerKits2] Disabling PlayerKits2 v1.24.1
-[03:56:55] [Server thread/INFO]: [PlayerKits²] Has been disabled! Version: 1.24.1
-[03:56:55] [Server thread/INFO]: [LuckPerms] Disabling LuckPerms v5.5.88
-[03:56:55] [Server thread/INFO]: [LuckPerms] Starting shutdown process...
-[03:56:55] [Server thread/INFO]: [LuckPerms] Closing storage...
-[03:56:55] [Server thread/INFO]: [LuckPerms] Goodbye!
-[03:56:55] [Server thread/INFO]: [AxSmithing] Disabling AxSmithing v1.9
-[03:56:55] [Server thread/INFO]: [TuffXPlus] Disabling TuffXPlus v1.1.1
-[03:56:55] [Server thread/INFO]: [TuffXPlus] [ViaBlocks] ViaBlocks has been disabled.
-[03:56:55] [Server thread/INFO]: [ViaBackwards] Disabling ViaBackwards v5.11.0
-[03:56:55] [Server thread/INFO]: [ViaVersion] Disabling ViaVersion v5.11.0
-[03:56:55] [Server thread/INFO]: [ViaVersion] ViaVersion has been disabled; uninjected the platform and shut down the scheduler.
-[03:56:55] [Server thread/INFO]: Saving players
-[03:56:55] [Server thread/INFO]: Saving worlds
-[03:56:55] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[03:56:55] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'minecraft:overworld'
-[03:56:55] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'minecraft:overworld'
-[03:56:55] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'minecraft:overworld'
-[03:56:55] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'minecraft:overworld' in 0.00s
-[03:56:55] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'minecraft:overworld'
-[03:56:55] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'minecraft:overworld'
-[03:56:55] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
-[03:56:55] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'minecraft:the_nether'
-[03:56:55] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'minecraft:the_nether'
-[03:56:55] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'minecraft:the_nether'
-[03:56:55] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'minecraft:the_nether' in 0.00s
-[03:56:55] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'minecraft:the_nether'
-[03:56:55] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'minecraft:the_nether'
-[03:56:55] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
-[03:56:55] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'minecraft:the_end'
-[03:56:55] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'minecraft:the_end'
-[03:56:55] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'minecraft:the_end'
-[03:56:55] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'minecraft:the_end' in 0.00s
-[03:56:55] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'minecraft:the_end'
-[03:56:55] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'minecraft:the_end'
-[03:56:55] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[03:56:55] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[03:56:55] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[03:56:55] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
-[03:56:55] [Server thread/INFO]: Waiting for all RegionFile I/O tasks to complete...
-[03:56:55] [Server thread/INFO]: All RegionFile I/O tasks to complete
-[03:56:55] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of worker pool for up to 60s...
-[03:56:55] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of I/O pool for up to 60s...
-[03:56:55] [Thread-4/WARN]: Exception in thread "Thread-4" java.lang.NoClassDefFoundError: org/h2/api/ErrorCode
-[03:56:55] [Thread-4/WARN]: 	at org.h2.message.DbException.getJdbcSQLException(DbException.java:475)
-[03:56:55] [Thread-4/WARN]: 	at org.h2.message.DbException.get(DbException.java:212)
-[03:56:55] [Thread-4/WARN]: 	at org.h2.mvstore.db.Store.close(Store.java:402)
-[03:56:55] [Thread-4/WARN]: 	at org.h2.engine.Database.closeOpenFilesAndUnlock(Database.java:1261)
-[03:56:55] [Thread-4/WARN]: 	at org.h2.engine.Database.closeImpl(Database.java:1225)
-[03:56:55] [Thread-4/WARN]: 	at org.h2.engine.Database.close(Database.java:1144)
-[03:56:55] [Thread-4/WARN]: 	at org.h2.engine.OnExitDatabaseCloser.onShutdown(OnExitDatabaseCloser.java:85)
-[03:56:55] [Thread-4/WARN]: 	at org.h2.engine.OnExitDatabaseCloser.run(OnExitDatabaseCloser.java:114)
-[03:56:55] [Thread-4/WARN]: Caused by: java.lang.ClassNotFoundException: org.h2.api.ErrorCode
-[03:56:55] [Thread-4/WARN]: 	at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:377)
-[03:56:55] [Thread-4/WARN]: 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:557)
-[03:56:55] [Thread-4/WARN]: 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:490)
-[03:56:55] [Thread-4/WARN]: 	... 8 more
+[04:03:07] [DataConverter MCTypeRegistry init thread/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Initialising converters for DataConverter...
+[04:03:07] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
+[04:03:09] [DataConverter MCTypeRegistry init thread/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Finished initialising converters for DataConverter in 1,721.2ms
+[04:03:13] [ServerMain/INFO]: Loaded 1585 recipes
+[04:03:13] [ServerMain/INFO]: Loaded 1688 advancements
+[04:03:13] [Server thread/INFO]: Starting minecraft server version 26.2
+[04:03:13] [Server thread/INFO]: Loading properties
+[04:03:13] [Server thread/INFO]: This server is running Paper version 26.2-111-main@f570646 (2026-08-07T16:16:19Z) (Implementing API version 26.2.build.111-stable)
+[04:03:13] [Server thread/INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
+[04:03:14] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[04:03:14] [Server thread/INFO]: Using 4 threads for Netty based IO
+[04:03:14] [Server thread/INFO]: [MoonriseCommon] Paper is using 1 worker threads, 1 I/O threads
+[04:03:15] [Server thread/INFO]: Default game type: SURVIVAL
+[04:03:15] [Server thread/INFO]: Generating keypair
+[04:03:15] [Server thread/INFO]: Starting Minecraft server on *:25567
+[04:03:15] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+[04:03:15] [Server thread/INFO]: Paper: Using OpenSSL 3.x.x (Linux x86_64) cipher from Velocity.
+[04:03:16] [Server thread/INFO]: [ViaVersion] Loading server plugin ViaVersion v5.11.0
+[04:03:16] [Server thread/INFO]: [ViaVersion] ViaVersion 5.11.0 is now loaded. Registering protocol transformers and injecting...
+[04:03:17] [Server thread/INFO]: [ViaBackwards] Loading translations...
+[04:03:17] [Server thread/INFO]: [ViaBackwards] Registering protocols...
+[04:03:18] [Server thread/INFO]: [ViaBackwards] Loading server plugin ViaBackwards v5.11.0
+[04:03:18] [Server thread/INFO]: [TuffXPlus] Loading server plugin TuffXPlus v1.1.1
+[04:03:19] [Server thread/INFO]: [packetevents] Loading packetevents...
+[04:03:22] [Server thread/INFO]: [packetevents] Loaded packetevents v2.13.0 for TuffXPlus
+[04:03:22] [Server thread/INFO]: [AxSmithing] Loading server plugin AxSmithing v1.9
+[04:03:22] [Server thread/INFO]: [LuckPerms] Loading server plugin LuckPerms v5.5.88
+[04:03:23] [Server thread/INFO]: [LuckPerms] Loading configuration...
+[04:03:23] [Server thread/INFO]: [PlayerKits2] Loading server plugin PlayerKits2 v1.24.1
+[04:03:23] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.5.88
+[04:03:23] [Server thread/INFO]:         __    
+[04:03:23] [Server thread/INFO]:   |    |__)   LuckPerms v5.5.88
+[04:03:23] [Server thread/INFO]:   |___ |      Running on Bukkit - Paper
+[04:03:23] [Server thread/INFO]: 
+[04:03:23] [Server thread/INFO]: [LuckPerms] Loading storage provider... [H2]
+[04:03:24] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
+[04:03:24] [Server thread/INFO]: [LuckPerms] Performing initial data load...
+[04:03:24] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 1440ms)
+[04:03:24] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[04:03:24] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[04:03:24] [Server thread/WARN]: Whilst this makes it possible to use Velocity, unless access to your server is properly restricted, it also opens up the ability for hackers to connect with any username they choose.
+[04:03:24] [Server thread/WARN]: Please see https://docs.papermc.io/velocity/security for further information.
+[04:03:24] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[04:03:24] [Server thread/INFO]: Preparing level "world"
+[04:03:26] [Server thread/INFO]: Loading 0 persistent chunks for level 'minecraft:overworld'...
+[04:03:26] [Server thread/INFO]: Preparing spawn area: 100%
+[04:03:26] [Server thread/INFO]: Prepared spawn area in 6 ms
+[04:03:26] [Server thread/INFO]: Loading 0 persistent chunks for level 'minecraft:the_nether'...
+[04:03:26] [Server thread/INFO]: Preparing spawn area: 100%
+[04:03:26] [Server thread/INFO]: Prepared spawn area in 5 ms
+[04:03:26] [Server thread/INFO]: Loading 0 persistent chunks for level 'minecraft:the_end'...
+[04:03:26] [Server thread/INFO]: Prepared spawn area in 1 ms
+[04:03:26] [Server thread/INFO]: Done preparing level "world" (1.527s)
+[04:03:26] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v5.11.0
+[04:03:26] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 26.2 (776)
+[04:03:26] [Server thread/INFO]: [ViaBackwards] Enabling ViaBackwards v5.11.0
+[04:03:26] [Server thread/INFO]: [TuffXPlus] Enabling TuffXPlus v1.1.1
+[04:03:26] [Server thread/INFO]: [TuffXPlus] Using standard Bukkit-compatible schedulers.
+[04:03:26] [Server thread/INFO]: [TuffXPlus] [Y0] Server Minecraft Version: 26.2
+[04:03:27] [Server thread/INFO]: [TuffXPlus] [TuffActions] Successfully loaded 1326 creative tab mappings.
+[04:03:27] [Server thread/INFO]: [TuffXPlus] [TuffActions] TuffActions has been enabled
+[04:03:27] [Server thread/INFO]: [TuffXPlus] [TuffActions] Enabling features...
+[04:03:27] [Server thread/INFO]: [TuffXPlus] [TuffActions] Swimming enabled.
+[04:03:27] [Server thread/INFO]: [TuffXPlus] [TuffActions] Creative Items enabled.
+[04:03:27] [Server thread/INFO]: [TuffXPlus] [TuffActions] Loading Restrictions config...
+[04:03:27] [Server thread/INFO]: [TuffXPlus] [TuffActions] Restrictions enabled.
+[04:03:27] [Server thread/INFO]: [TuffXPlus] [TuffActions] Finished enabling features.
+[04:03:27] [Server thread/INFO]: [TuffXPlus] [ViaBlocks] Generating ViaBlocks Pre-Defined Palette...
+[04:03:27] [Server thread/INFO]: [TuffXPlus] [ViaBlocks] Palette initialized with 649 entries.
+[04:03:27] [Server thread/INFO]: [TuffXPlus] [ViaBlocks] ViaBlocks has been enabled successfully and is listening for client handshakes.
+[04:03:27] [Server thread/INFO]: [TuffXPlus] [ViaEntities] ViaEntities enabled with 43 modern entities
+[04:03:27] [Server thread/INFO]: [TuffXPlus] 
+[04:03:27] [Server thread/INFO]: [TuffXPlus] ████████╗██╗   ██╗███████╗ ███████╗ ██╗  ██╗     ██╗
+[04:03:27] [Server thread/INFO]: [TuffXPlus] ╚══██╔══╝██║   ██║██╔════╝ ██╔════╝ ╚██╗██╔╝     ██║
+[04:03:27] [Server thread/INFO]: [TuffXPlus]    ██║   ██║   ██║██████╗  ██████╗   ╚███╔╝ ████████████╗
+[04:03:27] [Server thread/INFO]: [TuffXPlus]    ██║   ██║   ██║██╔═══╝  ██╔═══╝   ██╔██╗ ╚════██╔════╝
+[04:03:27] [Server thread/INFO]: [TuffXPlus]    ██║   ╚██████╔╝██║      ██║      ██╔╝╚██╗     ██║
+[04:03:27] [Server thread/INFO]: [TuffXPlus]    ╚═╝    ╚═════╝ ╚═╝      ╚═╝      ╚═╝  ╚═╝     ╚═╝
+[04:03:27] [Server thread/INFO]: [TuffXPlus] 
+[04:03:27] [Server thread/INFO]: [TuffXPlus] CREDITS
+[04:03:27] [Server thread/INFO]: [TuffXPlus] 
+[04:03:27] [Server thread/INFO]: [TuffXPlus] Y0 support:
+[04:03:27] [Server thread/INFO]: [TuffXPlus] • Below y0 (client + plugin) programmed by Potato (@justatypicalpotato)
+[04:03:27] [Server thread/INFO]: [TuffXPlus] • llucasandersen - plugin optimizations
+[04:03:27] [Server thread/INFO]: [TuffXPlus] 
+[04:03:27] [Server thread/INFO]: [TuffXPlus] ViaBlocks:
+[04:03:27] [Server thread/INFO]: [TuffXPlus] • ViaBlocks partial plugin and client rewrite by Potato
+[04:03:27] [Server thread/INFO]: [TuffXPlus] • llucasandersen (Complex client models and texture fixes,
+[04:03:27] [Server thread/INFO]: [TuffXPlus] 	  optimizations, PacketEvents migration and async safety fixes)
+[04:03:27] [Server thread/INFO]: [TuffXPlus] • coleis1op, if ts is driving me crazy, im taking credit
+[04:03:27] [Server thread/INFO]: [TuffXPlus] 
+[04:03:27] [Server thread/INFO]: [TuffXPlus] Other:
+[04:03:27] [Server thread/INFO]: [TuffXPlus] • Swimming and creative items programmed by Potato (@justatypicalpotato)
+[04:03:27] [Server thread/INFO]: [TuffXPlus] • shaded build, 1.14+ support (before merge) - llucasandersen
+[04:03:27] [Server thread/INFO]: [TuffXPlus] • Restrictions - UplandJacob
+[04:03:27] [Server thread/INFO]: [TuffXPlus] • Overall plugin merges by Potato
+[04:03:27] [Server thread/INFO]: [AxSmithing] Enabling AxSmithing v1.9
+[04:03:27] [Server thread/INFO]: [PlayerKits2] Enabling PlayerKits2 v1.24.1
+[04:03:28] [Server thread/INFO]: [PlayerKits²] Has been enabled! Version: 1.24.1
+[04:03:28] [Server thread/INFO]: [PlayerKits²] Thanks for using my plugin!   ~Ajneb97
+[04:03:28] [Server thread/INFO]: There is a new version available. (1.24.2)
+[04:03:28] [Server thread/INFO]: You can download it at: https://modrinth.com/plugin/playerkits-2
+[04:03:28] [Server thread/INFO]: [spark] Starting background profiler...
+[04:03:29] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[04:03:29] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+[04:03:29] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+[04:03:29] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[04:03:29] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[04:03:29] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[04:03:29] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[04:03:29] [Server thread/INFO]: Running delayed init tasks
+[04:03:29] [Server thread/INFO]: [TuffXPlus] [Y0] Loading mappings from 26.2-mappings.json
+[04:03:29] [Craft Scheduler Thread - 2 - ViaVersion/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor.
+[04:03:29] [User Authenticator #0/INFO]: UUID of player MrGuy987 is 1e921d2d-4ec0-3874-aeb6-f04b090ec0ec
+[04:03:30] [Server thread/INFO]: [TuffXPlus] [Y0] Loaded 29671 legacy mappings.
+[04:03:30] [Server thread/WARN]: [ViaVersion] There is a newer plugin version available: 5.12.1, you're on: 5.11.0
+[04:03:30] [Server thread/INFO]: Done (33.616s)! For help, type "help"
+[04:03:30] [Server thread/INFO]: [HorriblePlayerLoginEventHack] You have plugins listening to the PlayerLoginEvent, this will cause re-configuration APIs to be unavailable: [LuckPerms]
+[04:03:30] [Paper Async Task Handler Thread - 1/WARN]: *** You are running an outdated version of Minecraft, which is 2 releases and 23 builds behind!
+[04:03:30] [Paper Async Task Handler Thread - 1/WARN]: *** Please update to the latest stable version on https://papermc.io/downloads/paper ***
+[04:03:39] [Server thread/INFO]: MrGuy987 (1e921d2d-4ec0-3874-aeb6-f04b090ec0ec) lost connection: Disconnected
+[04:04:05] [User Authenticator #1/INFO]: UUID of player MrGuy987 is 1e921d2d-4ec0-3874-aeb6-f04b090ec0ec
+[04:04:07] [Server thread/INFO]: MrGuy987 joined the game
+[04:04:08] [Server thread/INFO]: MrGuy987[/[0:0:0:0:0:0:0:1]:59648] logged in with entity id 2 at ([minecraft:overworld]-976.2909677061344, 89.52126871894134, -114.71740909532603)
+[04:04:16] [Server thread/INFO]: MrGuy987 issued server command: /ikll
+[04:04:17] [Server thread/INFO]: MrGuy987 issued server command: /kill
+[04:04:17] [Server thread/INFO]: MrGuy987 was killed
+[04:04:17] [Server thread/INFO]: [MrGuy987: Killed MrGuy987]
+[04:04:49] [Server thread/INFO]: MrGuy987 issued server command: /function
+[04:04:54] [Server thread/INFO]: MrGuy987 issued server command: /function
+[04:04:56] [Server thread/INFO]: MrGuy987 issued server command: /help
+[04:05:08] [Server thread/INFO]: MrGuy987 issued server command: /datapack list enabled
+[04:05:21] [Server thread/INFO]: MrGuy987 issued server command: /datapack list available
+[04:08:05] [Server thread/INFO]: Kicked MrGuy987: lol
+[04:08:05] [Server thread/INFO]: MrGuy987 lost connection: lol
+[04:08:05] [Server thread/INFO]: MrGuy987 left the game
+[04:08:14] [Server thread/INFO]: Unknown or incomplete command. See below for error
+server<--[HERE]
+[04:08:16] [Server thread/INFO]: --------- Help: Index ---------------------------------
+[04:08:16] [Server thread/INFO]: Use /help [n] to get page n of help.
+[04:08:16] [Server thread/INFO]: Aliases: Lists command aliases
+[04:08:16] [Server thread/INFO]: AxSmithing: All commands for AxSmithing
+[04:08:16] [Server thread/INFO]: Bukkit: All commands for Bukkit
+[04:08:16] [Server thread/INFO]: LuckPerms: All commands for LuckPerms
+[04:08:16] [Server thread/INFO]: Minecraft: All commands for Minecraft
+[04:08:16] [Server thread/INFO]: Paper: All commands for Paper
+[04:08:16] [Server thread/INFO]: PlayerKits2: All commands for PlayerKits2
+[04:08:16] [Server thread/INFO]: TuffXPlus: All commands for TuffXPlus
+[04:08:16] [Server thread/INFO]: ViaVersion: All commands for ViaVersion
+[04:08:16] [Server thread/INFO]: /about: Gets the version of this server including any plugins in use
+[04:08:16] [Server thread/INFO]: /advancement: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /attribute: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /axsmithing: 
+[04:08:16] [Server thread/INFO]: /ban: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /ban-ip: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /banlist: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /bossbar: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /bukkit:about: Gets the version of this server including any plugins in use
+[04:08:16] [Server thread/INFO]: /bukkit:pl: Gets a list of plugins running on the server
+[04:08:16] [Server thread/INFO]: /bukkit:plugins: Gets a list of plugins running on the server
+[04:08:16] [Server thread/INFO]: /bukkit:ver: Gets the version of this server including any plugins in use
+[04:08:16] [Server thread/INFO]: /bukkit:version: Gets the version of this server including any plugins in use
+[04:08:16] [Server thread/INFO]: /clear: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /clone: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /damage: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /data: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /datapack: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /debug: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /defaultgamemode: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /deop: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /dialog: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /difficulty: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /effect: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /enchant: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /execute: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /experience: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /fetchprofile: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /fill: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /fillbiome: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /forceload: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /function: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /gamemode: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /gamerule: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /give: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /help: Shows the help menu
+[04:08:16] [Server thread/INFO]: /item: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /jfr: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /kick: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /kill: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /kit: Main command of PlayerKits2
+[04:08:16] [Server thread/INFO]: /list: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /locate: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /loot: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /luckperms: Manage permissions
+[04:08:16] [Server thread/INFO]: /me: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:advancement: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:attribute: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:ban: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:ban-ip: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:banlist: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:bossbar: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:clear: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:clone: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:damage: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:data: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:datapack: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:debug: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:defaultgamemode: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:deop: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:dialog: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:difficulty: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:effect: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:enchant: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:execute: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:experience: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:fetchprofile: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:fill: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:fillbiome: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:forceload: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:function: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:gamemode: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:gamerule: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:give: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:help: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:item: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:jfr: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:kick: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:kill: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:list: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:locate: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:loot: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:me: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:msg: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:op: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:pardon: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:pardon-ip: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:particle: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:perf: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:place: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:playsound: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:random: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:recipe: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:reload: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:return: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:ride: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:rotate: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:save-all: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:save-off: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:save-on: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:say: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:schedule: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:scoreboard: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:seed: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:setblock: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:setidletimeout: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:setworldspawn: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:spawnpoint: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:spectate: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:spreadplayers: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:stop: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:stopsound: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:stopwatch: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:summon: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:swing: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:tag: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:team: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:teammsg: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:teleport: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:tell: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:tellraw: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:test: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:tick: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:time: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:title: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:tm: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:tp: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:transfer: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:trigger: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:version: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:w: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:waypoint: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:weather: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:whitelist: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:worldborder: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /minecraft:xp: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /msg: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /mspt: View server tick times
+[04:08:16] [Server thread/INFO]: /op: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /paper: Paper related commands
+[04:08:16] [Server thread/INFO]: /paper:mspt: View server tick times
+[04:08:16] [Server thread/INFO]: /paper:spark: 
+[04:08:16] [Server thread/INFO]: /pardon: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /pardon-ip: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /particle: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /perf: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /pl: Gets a list of plugins running on the server
+[04:08:16] [Server thread/INFO]: /place: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /playsound: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /plugins: Gets a list of plugins running on the server
+[04:08:16] [Server thread/INFO]: /random: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /recipe: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /reload: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /restart: Restarts the server
+[04:08:16] [Server thread/INFO]: /restrictions: Allow or disallow TuffClient modules.
+[04:08:16] [Server thread/INFO]: /return: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /ride: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /rotate: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /save-all: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /save-off: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /save-on: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /say: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /schedule: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /scoreboard: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /seed: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /setblock: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /setidletimeout: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /setworldspawn: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /spark: 
+[04:08:16] [Server thread/INFO]: /spawnpoint: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /spectate: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /spigot: Spigot related commands
+[04:08:16] [Server thread/INFO]: /spreadplayers: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /stop: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /stopsound: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /stopwatch: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /summon: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /swing: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /tag: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /team: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /teammsg: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /teleport: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /tell: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /tellraw: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /test: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /tick: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /time: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /timings: Manages Spigot Timings data to see performance of the server.
+[04:08:16] [Server thread/INFO]: /title: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /tm: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /tp: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /tps: Gets the current ticks per second for the server
+[04:08:16] [Server thread/INFO]: /transfer: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /trigger: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /tuffx: Main command for TuffX.
+[04:08:16] [Server thread/INFO]: /ver: Gets the version of this server including any plugins in use
+[04:08:16] [Server thread/INFO]: /version: Gets the version of this server including any plugins in use
+[04:08:16] [Server thread/INFO]: /viablocks: Main command for ViaBlocks.
+[04:08:16] [Server thread/INFO]: /viaversion: Shows ViaVersion Version and more.
+[04:08:16] [Server thread/INFO]: /w: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /waypoint: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /weather: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /whitelist: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /worldborder: A Mojang provided command.
+[04:08:16] [Server thread/INFO]: /xp: A Mojang provided command.
+[04:08:23] [Server thread/INFO]: Checking version, please wait...
+[04:08:23] [ForkJoinPool.commonPool-worker-2/INFO]: This server is running Paper version 26.2-111-main@f570646 (2026-08-07T16:16:19Z) (Implementing API version 26.2.build.111-stable)
+You are 23 version(s) behind
+Download the new version at: https://papermc.io/downloads/paper
+Previous version: 26.2-100-7731202 (MC: 26.2)
+[04:08:34] [Server thread/INFO]: Unknown or incomplete command. See below for error
+tm<--[HERE]
+[04:08:39] [Paper Async Task Handler Thread - 1/INFO]: [⚡] spark v1.10.172
+[04:08:39] [Paper Async Task Handler Thread - 1/INFO]: [⚡] Run /spark help to view usage information.
+[04:08:44] [Paper Async Task Handler Thread - 0/INFO]: [⚡] spark v1.10.172
+[04:08:44] [Paper Async Task Handler Thread - 0/INFO]: > /spark profiler info
+[04:08:44] [Paper Async Task Handler Thread - 0/INFO]: > /spark profiler open
+[04:08:44] [Paper Async Task Handler Thread - 0/INFO]: > /spark profiler start
+[04:08:44] [Paper Async Task Handler Thread - 0/INFO]:       [--timeout <timeout seconds>]
+[04:08:44] [Paper Async Task Handler Thread - 0/INFO]:       [--thread *]
+[04:08:44] [Paper Async Task Handler Thread - 0/INFO]:       [--thread <thread name>]
+[04:08:44] [Paper Async Task Handler Thread - 0/INFO]:       [--only-ticks-over <tick length millis>]
+[04:08:44] [Paper Async Task Handler Thread - 0/INFO]:       [--interval <interval millis>]
+[04:08:44] [Paper Async Task Handler Thread - 0/INFO]:       [--alloc]
+[04:08:44] [Paper Async Task Handler Thread - 0/INFO]: > /spark profiler stop
+[04:08:44] [Paper Async Task Handler Thread - 0/INFO]: > /spark profiler cancel
+[04:08:44] [Paper Async Task Handler Thread - 0/INFO]: > /spark tps
+[04:08:44] [Paper Async Task Handler Thread - 0/INFO]: > /spark ping
+[04:08:44] [Paper Async Task Handler Thread - 0/INFO]:     [--player <username>]
+[04:08:44] [Paper Async Task Handler Thread - 0/INFO]: > /spark healthreport
+[04:08:44] [Paper Async Task Handler Thread - 0/INFO]:     [--upload]
+[04:08:44] [Paper Async Task Handler Thread - 0/INFO]:     [--memory]
+[04:08:44] [Paper Async Task Handler Thread - 0/INFO]:     [--network]
+[04:08:44] [Paper Async Task Handler Thread - 0/INFO]: > /spark tickmonitor
+[04:08:44] [Paper Async Task Handler Thread - 0/INFO]:     [--threshold <percentage increase>]
+[04:08:44] [Paper Async Task Handler Thread - 0/INFO]:     [--threshold-tick <tick duration>]
+[04:08:44] [Paper Async Task Handler Thread - 0/INFO]:     [--without-gc]
+[04:08:44] [Paper Async Task Handler Thread - 0/INFO]: > /spark gc
+[04:08:44] [Paper Async Task Handler Thread - 0/INFO]: > /spark gcmonitor
+[04:08:44] [Paper Async Task Handler Thread - 0/INFO]: > /spark heapsummary
+[04:08:44] [Paper Async Task Handler Thread - 0/INFO]:     [--save-to-file]
+[04:08:44] [Paper Async Task Handler Thread - 0/INFO]: > /spark heapdump
+[04:08:44] [Paper Async Task Handler Thread - 0/INFO]:     [--compress <type>]
+[04:08:44] [Paper Async Task Handler Thread - 0/INFO]: > /spark activity
+[04:08:44] [Paper Async Task Handler Thread - 0/INFO]:     [--page <page no>]
+[04:08:44] [Paper Async Task Handler Thread - 0/INFO]: 
+[04:08:44] [Paper Async Task Handler Thread - 0/INFO]: [⚡] For full usage information, please go to: https://spark.lucko.me/docs/Command-Usage
+[04:08:52] [Server thread/INFO]: Unknown or incomplete command. See below for error
+save all<--[HERE]
+[04:08:54] [Server thread/INFO]: Unknown or incomplete command. See below for error
+save<--[HERE]
+[04:09:12] [Server thread/INFO]: Stopping the server
+[04:09:12] [Server thread/INFO]: Stopping server
+[04:09:12] [Server thread/INFO]: [PlayerKits2] Disabling PlayerKits2 v1.24.1
+[04:09:12] [Server thread/INFO]: [PlayerKits²] Has been disabled! Version: 1.24.1
+[04:09:12] [Server thread/INFO]: [LuckPerms] Disabling LuckPerms v5.5.88
+[04:09:12] [Server thread/INFO]: [LuckPerms] Starting shutdown process...
+[04:09:12] [Server thread/INFO]: [LuckPerms] Closing storage...
+[04:09:12] [Server thread/INFO]: [LuckPerms] Goodbye!
+[04:09:12] [Server thread/INFO]: [AxSmithing] Disabling AxSmithing v1.9
+[04:09:12] [Server thread/INFO]: [TuffXPlus] Disabling TuffXPlus v1.1.1
+[04:09:12] [Server thread/INFO]: [TuffXPlus] [ViaBlocks] ViaBlocks has been disabled.
+[04:09:12] [Server thread/INFO]: [ViaBackwards] Disabling ViaBackwards v5.11.0
+[04:09:12] [Server thread/INFO]: [ViaVersion] Disabling ViaVersion v5.11.0
+[04:09:12] [Server thread/INFO]: [ViaVersion] ViaVersion has been disabled; uninjected the platform and shut down the scheduler.
+[04:09:12] [Server thread/INFO]: Saving players
+[04:09:12] [Server thread/INFO]: Saving worlds
+[04:09:12] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[04:09:12] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'minecraft:overworld'
+[04:09:12] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'minecraft:overworld'
+[04:09:12] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'minecraft:overworld'
+[04:09:12] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'minecraft:overworld' in 0.00s
+[04:09:12] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'minecraft:overworld'
+[04:09:12] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'minecraft:overworld'
+[04:09:12] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+[04:09:12] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'minecraft:the_nether'
+[04:09:12] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'minecraft:the_nether'
+[04:09:12] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'minecraft:the_nether'
+[04:09:12] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'minecraft:the_nether' in 0.00s
+[04:09:12] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'minecraft:the_nether'
+[04:09:12] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'minecraft:the_nether'
+[04:09:12] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+[04:09:12] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'minecraft:the_end'
+[04:09:12] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'minecraft:the_end'
+[04:09:12] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'minecraft:the_end'
+[04:09:12] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'minecraft:the_end' in 0.00s
+[04:09:12] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'minecraft:the_end'
+[04:09:12] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'minecraft:the_end'
+[04:09:12] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[04:09:12] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[04:09:12] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[04:09:12] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[04:09:12] [Server thread/INFO]: Waiting for all RegionFile I/O tasks to complete...
+[04:09:12] [Server thread/INFO]: All RegionFile I/O tasks to complete
+[04:09:12] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of worker pool for up to 60s...
+[04:09:12] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of I/O pool for up to 60s...
