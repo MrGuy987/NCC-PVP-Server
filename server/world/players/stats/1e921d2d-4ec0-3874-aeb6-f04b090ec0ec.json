@@ -1,34 +1,37 @@
 {
   "stats": {
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 22778,
+      "minecraft:walk_one_cm": 686,
+      "minecraft:leave_game": 8,
+      "minecraft:walk_under_water_one_cm": 548,
+      "minecraft:damage_taken": 804,
+      "minecraft:damage_dealt": 65,
+      "minecraft:play_time": 28531,
+      "minecraft:jump": 56,
+      "minecraft:time_since_death": 22758,
+      "minecraft:drop": 2,
+      "minecraft:sprint_one_cm": 5261,
+      "minecraft:interact_with_smithing_table": 1,
+      "minecraft:fall_one_cm": 6725,
+      "minecraft:swim_one_cm": 7659,
+      "minecraft:total_world_time": 28531,
+      "minecraft:fly_one_cm": 71559,
+      "minecraft:walk_on_water_one_cm": 1071,
+      "minecraft:crouch_one_cm": 13,
+      "minecraft:sneak_time": 288,
+      "minecraft:deaths": 4
+    },
+    "minecraft:crafted": {
+      "minecraft:air": 0
+    },
     "minecraft:used": {
       "minecraft:smithing_table": 1,
-      "minecraft:fishing_rod": 2
+      "minecraft:fishing_rod": 4
     },
     "minecraft:picked_up": {
       "minecraft:ender_pearl": 1,
       "minecraft:string": 2
-    },
-    "minecraft:custom": {
-      "minecraft:time_since_rest": 14500,
-      "minecraft:walk_one_cm": 686,
-      "minecraft:leave_game": 6,
-      "minecraft:walk_under_water_one_cm": 548,
-      "minecraft:damage_taken": 804,
-      "minecraft:damage_dealt": 65,
-      "minecraft:play_time": 20253,
-      "minecraft:jump": 53,
-      "minecraft:time_since_death": 14480,
-      "minecraft:drop": 2,
-      "minecraft:sprint_one_cm": 4961,
-      "minecraft:interact_with_smithing_table": 1,
-      "minecraft:fall_one_cm": 6725,
-      "minecraft:swim_one_cm": 7659,
-      "minecraft:total_world_time": 20253,
-      "minecraft:fly_one_cm": 55209,
-      "minecraft:walk_on_water_one_cm": 1071,
-      "minecraft:crouch_one_cm": 13,
-      "minecraft:sneak_time": 237,
-      "minecraft:deaths": 4
     },
     "minecraft:killed_by": {
       "minecraft:spider": 1,
@@ -36,9 +39,6 @@
     },
     "minecraft:dropped": {
       "minecraft:string": 2
-    },
-    "minecraft:crafted": {
-      "minecraft:air": 0
     }
   },
   "DataVersion": 4903

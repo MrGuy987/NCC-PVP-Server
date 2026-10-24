@@ -230,7 +230,7 @@ verification:
 
     # Sets the maximum number of accounts per ip.
     # - When this limit is reached, the player will be logged out.
-    account-per-ip: 3
+    account-per-ip: 500
 
   duration:
     # Sets the time (in milliseconds) for the JOIN attack mode to remain active.

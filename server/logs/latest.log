@@ -1,13 +1,13 @@
-[22:01:58] [ServerMain/INFO]: [bootstrap] Running Java 25 (OpenJDK 64-Bit Server VM 25.0.4.1+1-LTS; Microsoft Microsoft-14951822) on Linux 6.8.0-1064-azure (amd64)
-[22:01:58] [ServerMain/INFO]: [bootstrap] Loading Paper 26.2-111-main@f570646 (2026-08-07T16:16:19Z) for Minecraft 26.2
-[22:01:58] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
-[22:01:58] [ServerMain/INFO]: [PluginInitializerManager] Initialized 6 plugins
-[22:01:58] [ServerMain/INFO]: [PluginInitializerManager] Bukkit plugins (6):
+[22:11:56] [ServerMain/INFO]: [bootstrap] Running Java 25 (OpenJDK 64-Bit Server VM 25.0.4.1+1-LTS; Microsoft Microsoft-14951822) on Linux 6.8.0-1064-azure (amd64)
+[22:11:56] [ServerMain/INFO]: [bootstrap] Loading Paper 26.2-111-main@f570646 (2026-08-07T16:16:19Z) for Minecraft 26.2
+[22:11:56] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
+[22:11:57] [ServerMain/INFO]: [PluginInitializerManager] Initialized 6 plugins
+[22:11:57] [ServerMain/INFO]: [PluginInitializerManager] Bukkit plugins (6):
  - AxSmithing (1.9), LuckPerms (5.5.88), PlayerKits2 (1.24.1), TuffXPlus (1.1.1), ViaBackwards (5.11.0), ViaVersion (5.11.0)
-[22:02:07] [DataConverter MCTypeRegistry init thread/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Initialising converters for DataConverter...
-[22:02:08] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
-[22:02:10] [DataConverter MCTypeRegistry init thread/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Finished initialising converters for DataConverter in 2,477.3ms
-[22:02:11] [ServerMain/WARN]: Error reading pack metadata, attempting fallback type
+[22:12:10] [DataConverter MCTypeRegistry init thread/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Initialising converters for DataConverter...
+[22:12:11] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
+[22:12:14] [DataConverter MCTypeRegistry init thread/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Finished initialising converters for DataConverter in 3,364.5ms
+[22:12:14] [ServerMain/WARN]: Error reading pack metadata, attempting fallback type
 com.google.gson.JsonParseException: Pack key supported_formats is deprecated starting from pack format 82. Remove supported_formats from your pack.mcmeta.
 	at com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287) ~[datafixerupper-10.0.21.jar:?]
 	at net.minecraft.server.packs.resources.ResourceMetadata$2.getSection(ResourceMetadata.java:38) ~[paper-26.2.jar:26.2-111-f570646]
@@ -29,7 +29,7 @@ com.google.gson.JsonParseException: Pack key supported_formats is deprecated sta
 	at org.bukkit.craftbukkit.Main.main(Main.java:204) ~[paper-26.2.jar:26.2-111-f570646]
 	at io.papermc.paperclip.Paperclip.lambda$main$0(Paperclip.java:42) ~[?:?]
 	at java.base/java.lang.Thread.run(Thread.java:1474) ~[?:?]
-[22:02:11] [ServerMain/WARN]: Error reading pack metadata, attempting fallback type
+[22:12:14] [ServerMain/WARN]: Error reading pack metadata, attempting fallback type
 com.google.gson.JsonParseException: Pack declares support for version newer than 81, but is missing mandatory fields min_format and max_format
 	at com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287) ~[datafixerupper-10.0.21.jar:?]
 	at net.minecraft.server.packs.resources.ResourceMetadata$2.getSection(ResourceMetadata.java:38) ~[paper-26.2.jar:26.2-111-f570646]
@@ -51,23 +51,20 @@ com.google.gson.JsonParseException: Pack declares support for version newer than
 	at org.bukkit.craftbukkit.Main.main(Main.java:204) ~[paper-26.2.jar:26.2-111-f570646]
 	at io.papermc.paperclip.Paperclip.lambda$main$0(Paperclip.java:42) ~[?:?]
 	at java.base/java.lang.Thread.run(Thread.java:1474) ~[?:?]
-[22:02:11] [ServerMain/INFO]: Found new data pack file/Orbital-Strike-Cannon-V7-datapack.zip, loading it automatically
-[22:02:11] [ServerMain/INFO]: Found new data pack file/TaTesExtraTrimsV2_0_DP.zip, loading it automatically
-[22:02:11] [ServerMain/INFO]: Found new data pack file/enchantology_v1.5.5.zip, loading it automatically
-[22:02:19] [Worker-Main-1/ERROR]: Couldn't parse data file 'orbital:nuke_1_aim_old' from 'orbital:recipe/nuke_1_aim_old.json': DataResult.Error['Map entry 'R' : Not a string: {"item":"minecraft:redstone"}; List must have contents']
-[22:02:19] [Worker-Main-1/ERROR]: Couldn't parse data file 'orbital:nuke_1_old' from 'orbital:recipe/nuke_1_old.json': DataResult.Error['Map entry 'T' : Not a string: {"item":"minecraft:tnt"}; List must have contents']
-[22:02:19] [Worker-Main-1/ERROR]: Couldn't parse data file 'orbital:nuke_2_aim_old' from 'orbital:recipe/nuke_2_aim_old.json': DataResult.Error['Map entry 'R' : Not a string: {"item":"minecraft:redstone"}; List must have contents']
-[22:02:19] [Worker-Main-1/ERROR]: Couldn't parse data file 'orbital:nuke_2_old' from 'orbital:recipe/nuke_2_old.json': DataResult.Error['Map entry 'T' : Not a string: {"item":"minecraft:tnt"}; List must have contents']
-[22:02:19] [Worker-Main-1/ERROR]: Couldn't parse data file 'orbital:nuke_3_aim_old' from 'orbital:recipe/nuke_3_aim_old.json': DataResult.Error['Map entry 'R' : Not a string: {"item":"minecraft:redstone"}; List must have contents']
-[22:02:19] [Worker-Main-1/ERROR]: Couldn't parse data file 'orbital:nuke_3_old' from 'orbital:recipe/nuke_3_old.json': DataResult.Error['Map entry 'T' : Not a string: {"item":"minecraft:tnt"}; List must have contents']
-[22:02:20] [Worker-Main-1/ERROR]: Couldn't parse data file 'orbital:stab_1_aim_old' from 'orbital:recipe/stab_1_aim_old.json': DataResult.Error['Map entry 'R' : Not a string: {"item":"minecraft:redstone"}; List must have contents']
-[22:02:20] [Worker-Main-1/ERROR]: Couldn't parse data file 'orbital:stab_1_old' from 'orbital:recipe/stab_1_old.json': DataResult.Error['Map entry 'T' : Not a string: {"item":"minecraft:tnt"}; List must have contents']
-[22:02:20] [Worker-Main-1/ERROR]: Couldn't parse data file 'orbital:stab_2_aim_old' from 'orbital:recipe/stab_2_aim_old.json': DataResult.Error['Map entry 'R' : Not a string: {"item":"minecraft:redstone"}; List must have contents']
-[22:02:20] [Worker-Main-1/ERROR]: Couldn't parse data file 'orbital:stab_2_old' from 'orbital:recipe/stab_2_old.json': DataResult.Error['Map entry 'T' : Not a string: {"item":"minecraft:tnt"}; List must have contents']
-[22:02:20] [Worker-Main-1/ERROR]: Couldn't parse data file 'orbital:stab_3_aim_old' from 'orbital:recipe/stab_3_aim_old.json': DataResult.Error['Map entry 'R' : Not a string: {"item":"minecraft:redstone"}; List must have contents']
-[22:02:20] [Worker-Main-1/ERROR]: Couldn't parse data file 'orbital:stab_3_old' from 'orbital:recipe/stab_3_old.json': DataResult.Error['Map entry 'T' : Not a string: {"item":"minecraft:tnt"}; List must have contents']
-[22:02:24] [ServerMain/INFO]: Loaded 1669 recipes
-[22:02:24] [ServerMain/ERROR]: Failed to load function orbital:gr_1_21_6
+[22:12:25] [Worker-Main-1/ERROR]: Couldn't parse data file 'orbital:nuke_1_aim_old' from 'orbital:recipe/nuke_1_aim_old.json': DataResult.Error['Map entry 'R' : Not a string: {"item":"minecraft:redstone"}; List must have contents']
+[22:12:25] [Worker-Main-1/ERROR]: Couldn't parse data file 'orbital:nuke_1_old' from 'orbital:recipe/nuke_1_old.json': DataResult.Error['Map entry 'T' : Not a string: {"item":"minecraft:tnt"}; List must have contents']
+[22:12:25] [Worker-Main-1/ERROR]: Couldn't parse data file 'orbital:nuke_2_aim_old' from 'orbital:recipe/nuke_2_aim_old.json': DataResult.Error['Map entry 'R' : Not a string: {"item":"minecraft:redstone"}; List must have contents']
+[22:12:25] [Worker-Main-1/ERROR]: Couldn't parse data file 'orbital:nuke_2_old' from 'orbital:recipe/nuke_2_old.json': DataResult.Error['Map entry 'T' : Not a string: {"item":"minecraft:tnt"}; List must have contents']
+[22:12:25] [Worker-Main-1/ERROR]: Couldn't parse data file 'orbital:nuke_3_aim_old' from 'orbital:recipe/nuke_3_aim_old.json': DataResult.Error['Map entry 'R' : Not a string: {"item":"minecraft:redstone"}; List must have contents']
+[22:12:25] [Worker-Main-1/ERROR]: Couldn't parse data file 'orbital:nuke_3_old' from 'orbital:recipe/nuke_3_old.json': DataResult.Error['Map entry 'T' : Not a string: {"item":"minecraft:tnt"}; List must have contents']
+[22:12:25] [Worker-Main-1/ERROR]: Couldn't parse data file 'orbital:stab_1_aim_old' from 'orbital:recipe/stab_1_aim_old.json': DataResult.Error['Map entry 'R' : Not a string: {"item":"minecraft:redstone"}; List must have contents']
+[22:12:25] [Worker-Main-1/ERROR]: Couldn't parse data file 'orbital:stab_1_old' from 'orbital:recipe/stab_1_old.json': DataResult.Error['Map entry 'T' : Not a string: {"item":"minecraft:tnt"}; List must have contents']
+[22:12:25] [Worker-Main-1/ERROR]: Couldn't parse data file 'orbital:stab_2_aim_old' from 'orbital:recipe/stab_2_aim_old.json': DataResult.Error['Map entry 'R' : Not a string: {"item":"minecraft:redstone"}; List must have contents']
+[22:12:25] [Worker-Main-1/ERROR]: Couldn't parse data file 'orbital:stab_2_old' from 'orbital:recipe/stab_2_old.json': DataResult.Error['Map entry 'T' : Not a string: {"item":"minecraft:tnt"}; List must have contents']
+[22:12:25] [Worker-Main-1/ERROR]: Couldn't parse data file 'orbital:stab_3_aim_old' from 'orbital:recipe/stab_3_aim_old.json': DataResult.Error['Map entry 'R' : Not a string: {"item":"minecraft:redstone"}; List must have contents']
+[22:12:25] [Worker-Main-1/ERROR]: Couldn't parse data file 'orbital:stab_3_old' from 'orbital:recipe/stab_3_old.json': DataResult.Error['Map entry 'T' : Not a string: {"item":"minecraft:tnt"}; List must have contents']
+[22:12:29] [ServerMain/INFO]: Loaded 1669 recipes
+[22:12:29] [ServerMain/ERROR]: Failed to load function orbital:gr_1_21_6
 java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Incorrect argument for command at position 9: gamerule <--[HERE]
 	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
 	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:359) ~[?:?]
@@ -86,287 +83,132 @@ Caused by: java.lang.IllegalArgumentException: Whilst parsing command on line 1:
 	at net.minecraft.server.ServerFunctionLibrary.lambda$reload$3(ServerFunctionLibrary.java:91) ~[paper-26.2.jar:26.2-111-f570646]
 	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789) ~[?:?]
 	... 8 more
-[22:02:24] [ServerMain/INFO]: Loaded 1797 advancements
-[22:02:25] [Server thread/INFO]: Starting minecraft server version 26.2
-[22:02:25] [Server thread/INFO]: Loading properties
-[22:02:25] [Server thread/INFO]: This server is running Paper version 26.2-111-main@f570646 (2026-08-07T16:16:19Z) (Implementing API version 26.2.build.111-stable)
-[22:02:25] [Server thread/INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
-[22:02:26] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[22:02:26] [Server thread/INFO]: Using 4 threads for Netty based IO
-[22:02:28] [Server thread/INFO]: [MoonriseCommon] Paper is using 1 worker threads, 1 I/O threads
-[22:02:29] [Server thread/INFO]: Default game type: SURVIVAL
-[22:02:29] [Server thread/INFO]: Generating keypair
-[22:02:31] [Server thread/INFO]: Starting Minecraft server on *:25567
-[22:02:31] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
-[22:02:31] [Server thread/INFO]: Paper: Using OpenSSL 3.x.x (Linux x86_64) cipher from Velocity.
-[22:02:33] [Server thread/INFO]: [ViaVersion] Loading server plugin ViaVersion v5.11.0
-[22:02:33] [Server thread/INFO]: [ViaVersion] ViaVersion 5.11.0 is now loaded. Registering protocol transformers and injecting...
-[22:02:38] [Server thread/INFO]: [ViaBackwards] Loading translations...
-[22:02:38] [Server thread/INFO]: [ViaBackwards] Registering protocols...
-[22:02:41] [Server thread/INFO]: [ViaBackwards] Loading server plugin ViaBackwards v5.11.0
-[22:02:41] [Server thread/INFO]: [TuffXPlus] Loading server plugin TuffXPlus v1.1.1
-[22:02:44] [Server thread/INFO]: [packetevents] Loading packetevents...
-[22:02:53] [Server thread/INFO]: [packetevents] Loaded packetevents v2.13.0 for TuffXPlus
-[22:02:53] [Server thread/INFO]: [AxSmithing] Loading server plugin AxSmithing v1.9
-[22:02:54] [Server thread/INFO]: [LuckPerms] Loading server plugin LuckPerms v5.5.88
-[22:02:55] [Server thread/INFO]: [LuckPerms] Loading configuration...
-[22:02:56] [Server thread/INFO]: [PlayerKits2] Loading server plugin PlayerKits2 v1.24.1
-[22:02:56] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.5.88
-[22:02:57] [Server thread/INFO]:         __    
-[22:02:57] [Server thread/INFO]:   |    |__)   LuckPerms v5.5.88
-[22:02:57] [Server thread/INFO]:   |___ |      Running on Bukkit - Paper
-[22:02:57] [Server thread/INFO]: 
-[22:02:58] [Server thread/INFO]: [LuckPerms] Loading storage provider... [H2]
-[22:03:01] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
-[22:03:01] [Server thread/INFO]: [LuckPerms] Performing initial data load...
-[22:03:02] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 5978ms)
-[22:03:02] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[22:03:02] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[22:03:02] [Server thread/WARN]: Whilst this makes it possible to use Velocity, unless access to your server is properly restricted, it also opens up the ability for hackers to connect with any username they choose.
-[22:03:02] [Server thread/WARN]: Please see https://docs.papermc.io/velocity/security for further information.
-[22:03:02] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[22:03:02] [Server thread/INFO]: Preparing level "world"
-[22:03:04] [Server thread/INFO]: Loading 0 persistent chunks for level 'minecraft:overworld'...
-[22:03:04] [Server thread/INFO]: Preparing spawn area: 100%
-[22:03:04] [Server thread/INFO]: Prepared spawn area in 7 ms
-[22:03:04] [Server thread/INFO]: Loading 0 persistent chunks for level 'minecraft:the_nether'...
-[22:03:04] [Server thread/INFO]: Preparing spawn area: 100%
-[22:03:04] [Server thread/INFO]: Prepared spawn area in 2 ms
-[22:03:04] [Server thread/INFO]: Loading 0 persistent chunks for level 'minecraft:the_end'...
-[22:03:04] [Server thread/INFO]: Prepared spawn area in 6 ms
-[22:03:04] [Server thread/INFO]: Done preparing level "world" (2.580s)
-[22:03:04] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v5.11.0
-[22:03:04] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 26.2 (776)
-[22:03:04] [Server thread/INFO]: [ViaBackwards] Enabling ViaBackwards v5.11.0
-[22:03:05] [Server thread/INFO]: [TuffXPlus] Enabling TuffXPlus v1.1.1
-[22:03:05] [Server thread/INFO]: [TuffXPlus] Using standard Bukkit-compatible schedulers.
-[22:03:05] [Server thread/INFO]: [TuffXPlus] [Y0] Server Minecraft Version: 26.2
-[22:03:07] [Server thread/INFO]: [TuffXPlus] [TuffActions] Successfully loaded 1326 creative tab mappings.
-[22:03:07] [Server thread/INFO]: [TuffXPlus] [TuffActions] TuffActions has been enabled
-[22:03:07] [Server thread/INFO]: [TuffXPlus] [TuffActions] Enabling features...
-[22:03:07] [Server thread/INFO]: [TuffXPlus] [TuffActions] Swimming enabled.
-[22:03:07] [Server thread/INFO]: [TuffXPlus] [TuffActions] Creative Items enabled.
-[22:03:07] [Server thread/INFO]: [TuffXPlus] [TuffActions] Loading Restrictions config...
-[22:03:07] [Server thread/INFO]: [TuffXPlus] [TuffActions] Restrictions enabled.
-[22:03:07] [Server thread/INFO]: [TuffXPlus] [TuffActions] Finished enabling features.
-[22:03:07] [Server thread/INFO]: [TuffXPlus] [ViaBlocks] Generating ViaBlocks Pre-Defined Palette...
-[22:03:07] [Server thread/INFO]: [TuffXPlus] [ViaBlocks] Palette initialized with 649 entries.
-[22:03:07] [Server thread/INFO]: [TuffXPlus] [ViaBlocks] ViaBlocks has been enabled successfully and is listening for client handshakes.
-[22:03:07] [Server thread/INFO]: [TuffXPlus] [ViaEntities] ViaEntities enabled with 43 modern entities
-[22:03:07] [Server thread/INFO]: [TuffXPlus] 
-[22:03:07] [Server thread/INFO]: [TuffXPlus] ████████╗██╗   ██╗███████╗ ███████╗ ██╗  ██╗     ██╗
-[22:03:07] [Server thread/INFO]: [TuffXPlus] ╚══██╔══╝██║   ██║██╔════╝ ██╔════╝ ╚██╗██╔╝     ██║
-[22:03:07] [Server thread/INFO]: [TuffXPlus]    ██║   ██║   ██║██████╗  ██████╗   ╚███╔╝ ████████████╗
-[22:03:07] [Server thread/INFO]: [TuffXPlus]    ██║   ██║   ██║██╔═══╝  ██╔═══╝   ██╔██╗ ╚════██╔════╝
-[22:03:07] [Server thread/INFO]: [TuffXPlus]    ██║   ╚██████╔╝██║      ██║      ██╔╝╚██╗     ██║
-[22:03:07] [Server thread/INFO]: [TuffXPlus]    ╚═╝    ╚═════╝ ╚═╝      ╚═╝      ╚═╝  ╚═╝     ╚═╝
-[22:03:07] [Server thread/INFO]: [TuffXPlus] 
-[22:03:07] [Server thread/INFO]: [TuffXPlus] CREDITS
-[22:03:07] [Server thread/INFO]: [TuffXPlus] 
-[22:03:07] [Server thread/INFO]: [TuffXPlus] Y0 support:
-[22:03:07] [Server thread/INFO]: [TuffXPlus] • Below y0 (client + plugin) programmed by Potato (@justatypicalpotato)
-[22:03:07] [Server thread/INFO]: [TuffXPlus] • llucasandersen - plugin optimizations
-[22:03:07] [Server thread/INFO]: [TuffXPlus] 
-[22:03:07] [Server thread/INFO]: [TuffXPlus] ViaBlocks:
-[22:03:07] [Server thread/INFO]: [TuffXPlus] • ViaBlocks partial plugin and client rewrite by Potato
-[22:03:07] [Server thread/INFO]: [TuffXPlus] • llucasandersen (Complex client models and texture fixes,
-[22:03:07] [Server thread/INFO]: [TuffXPlus] 	  optimizations, PacketEvents migration and async safety fixes)
-[22:03:07] [Server thread/INFO]: [TuffXPlus] • coleis1op, if ts is driving me crazy, im taking credit
-[22:03:07] [Server thread/INFO]: [TuffXPlus] 
-[22:03:07] [Server thread/INFO]: [TuffXPlus] Other:
-[22:03:07] [Server thread/INFO]: [TuffXPlus] • Swimming and creative items programmed by Potato (@justatypicalpotato)
-[22:03:07] [Server thread/INFO]: [TuffXPlus] • shaded build, 1.14+ support (before merge) - llucasandersen
-[22:03:07] [Server thread/INFO]: [TuffXPlus] • Restrictions - UplandJacob
-[22:03:07] [Server thread/INFO]: [TuffXPlus] • Overall plugin merges by Potato
-[22:03:07] [Server thread/INFO]: [AxSmithing] Enabling AxSmithing v1.9
-[22:03:07] [Server thread/INFO]: [PlayerKits2] Enabling PlayerKits2 v1.24.1
-[22:03:08] [Server thread/INFO]: [PlayerKits²] Has been enabled! Version: 1.24.1
-[22:03:08] [Server thread/INFO]: [PlayerKits²] Thanks for using my plugin!   ~Ajneb97
-[22:03:08] [Server thread/INFO]: There is a new version available. (1.24.2)
-[22:03:08] [Server thread/INFO]: You can download it at: https://modrinth.com/plugin/playerkits-2
-[22:03:09] [Server thread/INFO]: [spark] Starting background profiler...
-[22:03:10] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[22:03:10] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
-[22:03:10] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
-[22:03:10] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[22:03:10] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[22:03:10] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[22:03:10] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
-[22:03:10] [Server thread/INFO]: Running delayed init tasks
-[22:03:10] [Server thread/INFO]: [TuffXPlus] [Y0] Loading mappings from 26.2-mappings.json
-[22:03:10] [Craft Scheduler Thread - 5 - ViaVersion/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor.
-[22:03:12] [Server thread/INFO]: [TuffXPlus] [Y0] Loaded 29671 legacy mappings.
-[22:03:12] [Server thread/WARN]: [ViaVersion] There is a newer plugin version available: 5.12.1, you're on: 5.11.0
-[22:03:12] [Server thread/INFO]: Done (76.033s)! For help, type "help"
-[22:03:13] [Paper Async Task Handler Thread - 1/WARN]: *** You are running an outdated version of Minecraft, which is 2 releases and 23 builds behind!
-[22:03:13] [Paper Async Task Handler Thread - 1/WARN]: *** Please update to the latest stable version on https://papermc.io/downloads/paper ***
-[22:03:47] [User Authenticator #0/INFO]: UUID of player MrGuy987 is 1e921d2d-4ec0-3874-aeb6-f04b090ec0ec
-[22:03:47] [Server thread/INFO]: [HorriblePlayerLoginEventHack] You have plugins listening to the PlayerLoginEvent, this will cause re-configuration APIs to be unavailable: [LuckPerms]
-[22:03:50] [Server thread/INFO]: MrGuy987 joined the game
-[22:03:50] [Server thread/INFO]: MrGuy987[/[0:0:0:0:0:0:0:1]:42570] logged in with entity id 1 at ([minecraft:overworld]-916.0106316952202, 76.61881185472697, -138.53330811699703)
-[22:03:56] [Server thread/INFO]: MrGuy987 issued server command: /datapack list
-[22:03:56] [Server thread/WARN]: Error reading pack metadata, attempting fallback type
-com.google.gson.JsonParseException: Pack key supported_formats is deprecated starting from pack format 82. Remove supported_formats from your pack.mcmeta.
-	at com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287) ~[datafixerupper-10.0.21.jar:?]
-	at net.minecraft.server.packs.resources.ResourceMetadata$2.getSection(ResourceMetadata.java:38) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.packs.AbstractPackResources.getMetadataSection(AbstractPackResources.java:24) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.packs.repository.Pack.readPackMetadata(Pack.java:51) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.packs.repository.Pack.readMetaAndCreate(Pack.java:32) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.packs.repository.FolderRepositorySource.lambda$loadPacks$0(FolderRepositorySource.java:54) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.packs.repository.FolderRepositorySource.discoverPacks(FolderRepositorySource.java:80) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.packs.repository.FolderRepositorySource.loadPacks(FolderRepositorySource.java:52) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.packs.repository.PackRepository.discoverAvailable(PackRepository.java:52) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.packs.repository.PackRepository.reload(PackRepository.java:44) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.packs.repository.PackRepository.reload(PackRepository.java:39) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.commands.DataPackCommand.listEnabledPacks(DataPackCommand.java:269) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.commands.DataPackCommand.listPacks(DataPackCommand.java:241) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.commands.DataPackCommand.lambda$register$10(DataPackCommand.java:152) ~[paper-26.2.jar:26.2-111-f570646]
-	at com.mojang.brigadier.context.ContextChain.runExecutable(ContextChain.java:73) ~[brigadier-1.3.10.jar:?]
-	at net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:30) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:13) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.commands.execution.UnboundEntryAction.lambda$bind$0(UnboundEntryAction.java:8) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.commands.execution.CommandQueueEntry.execute(CommandQueueEntry.java:5) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.commands.execution.ExecutionContext.runCommandQueue(ExecutionContext.java:104) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.commands.Commands.executeCommandInContext(Commands.java:470) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.commands.Commands.performCommand(Commands.java:378) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.commands.Commands.performCommand(Commands.java:366) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.network.ServerGamePacketListenerImpl.performUnsignedChatCommand(ServerGamePacketListenerImpl.java:2406) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.network.ServerGamePacketListenerImpl.lambda$handleChatCommand$0(ServerGamePacketListenerImpl.java:2379) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:207) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1534) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:192) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.util.thread.BlockableEventLoop.runTaskIf(BlockableEventLoop.java:74) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.MinecraftServer.runAllTasksAtTickStart(MinecraftServer.java:1186) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.MinecraftServer.processPacketsAndTick(MinecraftServer.java:1677) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1348) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:303) ~[paper-26.2.jar:26.2-111-f570646]
-	at java.base/java.lang.Thread.run(Thread.java:1474) ~[?:?]
-[22:03:56] [Server thread/WARN]: Error reading pack metadata, attempting fallback type
-com.google.gson.JsonParseException: Pack declares support for version newer than 81, but is missing mandatory fields min_format and max_format
-	at com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287) ~[datafixerupper-10.0.21.jar:?]
-	at net.minecraft.server.packs.resources.ResourceMetadata$2.getSection(ResourceMetadata.java:38) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.packs.AbstractPackResources.getMetadataSection(AbstractPackResources.java:24) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.packs.repository.Pack.readPackMetadata(Pack.java:51) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.packs.repository.Pack.readMetaAndCreate(Pack.java:32) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.packs.repository.FolderRepositorySource.lambda$loadPacks$0(FolderRepositorySource.java:54) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.packs.repository.FolderRepositorySource.discoverPacks(FolderRepositorySource.java:80) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.packs.repository.FolderRepositorySource.loadPacks(FolderRepositorySource.java:52) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.packs.repository.PackRepository.discoverAvailable(PackRepository.java:52) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.packs.repository.PackRepository.reload(PackRepository.java:44) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.packs.repository.PackRepository.reload(PackRepository.java:39) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.commands.DataPackCommand.listEnabledPacks(DataPackCommand.java:269) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.commands.DataPackCommand.listPacks(DataPackCommand.java:241) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.commands.DataPackCommand.lambda$register$10(DataPackCommand.java:152) ~[paper-26.2.jar:26.2-111-f570646]
-	at com.mojang.brigadier.context.ContextChain.runExecutable(ContextChain.java:73) ~[brigadier-1.3.10.jar:?]
-	at net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:30) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:13) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.commands.execution.UnboundEntryAction.lambda$bind$0(UnboundEntryAction.java:8) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.commands.execution.CommandQueueEntry.execute(CommandQueueEntry.java:5) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.commands.execution.ExecutionContext.runCommandQueue(ExecutionContext.java:104) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.commands.Commands.executeCommandInContext(Commands.java:470) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.commands.Commands.performCommand(Commands.java:378) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.commands.Commands.performCommand(Commands.java:366) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.network.ServerGamePacketListenerImpl.performUnsignedChatCommand(ServerGamePacketListenerImpl.java:2406) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.network.ServerGamePacketListenerImpl.lambda$handleChatCommand$0(ServerGamePacketListenerImpl.java:2379) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:207) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1534) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:192) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.util.thread.BlockableEventLoop.runTaskIf(BlockableEventLoop.java:74) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.MinecraftServer.runAllTasksAtTickStart(MinecraftServer.java:1186) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.MinecraftServer.processPacketsAndTick(MinecraftServer.java:1677) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1348) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:303) ~[paper-26.2.jar:26.2-111-f570646]
-	at java.base/java.lang.Thread.run(Thread.java:1474) ~[?:?]
-[22:03:56] [Server thread/WARN]: Error reading pack metadata, attempting fallback type
-com.google.gson.JsonParseException: Pack key supported_formats is deprecated starting from pack format 82. Remove supported_formats from your pack.mcmeta.
-	at com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287) ~[datafixerupper-10.0.21.jar:?]
-	at net.minecraft.server.packs.resources.ResourceMetadata$2.getSection(ResourceMetadata.java:38) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.packs.AbstractPackResources.getMetadataSection(AbstractPackResources.java:24) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.packs.repository.Pack.readPackMetadata(Pack.java:51) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.packs.repository.Pack.readMetaAndCreate(Pack.java:32) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.packs.repository.FolderRepositorySource.lambda$loadPacks$0(FolderRepositorySource.java:54) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.packs.repository.FolderRepositorySource.discoverPacks(FolderRepositorySource.java:80) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.packs.repository.FolderRepositorySource.loadPacks(FolderRepositorySource.java:52) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.packs.repository.PackRepository.discoverAvailable(PackRepository.java:52) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.packs.repository.PackRepository.reload(PackRepository.java:44) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.packs.repository.PackRepository.reload(PackRepository.java:39) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.commands.DataPackCommand.listAvailablePacks(DataPackCommand.java:246) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.commands.DataPackCommand.listPacks(DataPackCommand.java:241) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.commands.DataPackCommand.lambda$register$10(DataPackCommand.java:152) ~[paper-26.2.jar:26.2-111-f570646]
-	at com.mojang.brigadier.context.ContextChain.runExecutable(ContextChain.java:73) ~[brigadier-1.3.10.jar:?]
-	at net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:30) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:13) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.commands.execution.UnboundEntryAction.lambda$bind$0(UnboundEntryAction.java:8) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.commands.execution.CommandQueueEntry.execute(CommandQueueEntry.java:5) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.commands.execution.ExecutionContext.runCommandQueue(ExecutionContext.java:104) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.commands.Commands.executeCommandInContext(Commands.java:470) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.commands.Commands.performCommand(Commands.java:378) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.commands.Commands.performCommand(Commands.java:366) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.network.ServerGamePacketListenerImpl.performUnsignedChatCommand(ServerGamePacketListenerImpl.java:2406) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.network.ServerGamePacketListenerImpl.lambda$handleChatCommand$0(ServerGamePacketListenerImpl.java:2379) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:207) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1534) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:192) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.util.thread.BlockableEventLoop.runTaskIf(BlockableEventLoop.java:74) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.MinecraftServer.runAllTasksAtTickStart(MinecraftServer.java:1186) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.MinecraftServer.processPacketsAndTick(MinecraftServer.java:1677) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1348) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:303) ~[paper-26.2.jar:26.2-111-f570646]
-	at java.base/java.lang.Thread.run(Thread.java:1474) ~[?:?]
-[22:03:56] [Server thread/WARN]: Error reading pack metadata, attempting fallback type
-com.google.gson.JsonParseException: Pack declares support for version newer than 81, but is missing mandatory fields min_format and max_format
-	at com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287) ~[datafixerupper-10.0.21.jar:?]
-	at net.minecraft.server.packs.resources.ResourceMetadata$2.getSection(ResourceMetadata.java:38) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.packs.AbstractPackResources.getMetadataSection(AbstractPackResources.java:24) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.packs.repository.Pack.readPackMetadata(Pack.java:51) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.packs.repository.Pack.readMetaAndCreate(Pack.java:32) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.packs.repository.FolderRepositorySource.lambda$loadPacks$0(FolderRepositorySource.java:54) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.packs.repository.FolderRepositorySource.discoverPacks(FolderRepositorySource.java:80) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.packs.repository.FolderRepositorySource.loadPacks(FolderRepositorySource.java:52) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.packs.repository.PackRepository.discoverAvailable(PackRepository.java:52) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.packs.repository.PackRepository.reload(PackRepository.java:44) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.packs.repository.PackRepository.reload(PackRepository.java:39) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.commands.DataPackCommand.listAvailablePacks(DataPackCommand.java:246) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.commands.DataPackCommand.listPacks(DataPackCommand.java:241) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.commands.DataPackCommand.lambda$register$10(DataPackCommand.java:152) ~[paper-26.2.jar:26.2-111-f570646]
-	at com.mojang.brigadier.context.ContextChain.runExecutable(ContextChain.java:73) ~[brigadier-1.3.10.jar:?]
-	at net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:30) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:13) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.commands.execution.UnboundEntryAction.lambda$bind$0(UnboundEntryAction.java:8) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.commands.execution.CommandQueueEntry.execute(CommandQueueEntry.java:5) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.commands.execution.ExecutionContext.runCommandQueue(ExecutionContext.java:104) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.commands.Commands.executeCommandInContext(Commands.java:470) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.commands.Commands.performCommand(Commands.java:378) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.commands.Commands.performCommand(Commands.java:366) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.network.ServerGamePacketListenerImpl.performUnsignedChatCommand(ServerGamePacketListenerImpl.java:2406) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.network.ServerGamePacketListenerImpl.lambda$handleChatCommand$0(ServerGamePacketListenerImpl.java:2379) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:207) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1534) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:192) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.util.thread.BlockableEventLoop.runTaskIf(BlockableEventLoop.java:74) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.MinecraftServer.runAllTasksAtTickStart(MinecraftServer.java:1186) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.MinecraftServer.processPacketsAndTick(MinecraftServer.java:1677) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1348) ~[paper-26.2.jar:26.2-111-f570646]
-	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:303) ~[paper-26.2.jar:26.2-111-f570646]
-	at java.base/java.lang.Thread.run(Thread.java:1474) ~[?:?]
-[22:04:15] [Server thread/INFO]: MrGuy987 issued server command: /function orbital:give/stab_aim_3_inf
-[22:04:15] [Server thread/INFO]: [MrGuy987: Running function orbital:give/stab_aim_3_inf]
-[22:04:59] [Server thread/INFO]: MrGuy987 issued server command: /function enchantology:butchery/shear_enderman
-[22:04:59] [Server thread/INFO]: [MrGuy987: Running function enchantology:butchery/shear_enderman]
-[22:05:28] [Server thread/INFO]: MrGuy987 has completed the challenge [Cover Me in Debris]
-[22:05:44] [Server thread/INFO]: MrGuy987 has made the advancement [Advanced Smithing]
-[22:06:09] [Server thread/INFO]: MrGuy987 issued server command: /clear
-[22:06:09] [Server thread/INFO]: [MrGuy987: Removed 127 item(s) from player MrGuy987]
-[22:07:40] [Server thread/INFO]: MrGuy987 lost connection: Timed out
-[22:07:40] [Server thread/INFO]: MrGuy987 left the game
-[22:09:07] [User Authenticator #1/INFO]: UUID of player MrGuy987 is 1e921d2d-4ec0-3874-aeb6-f04b090ec0ec
-[22:09:08] [Server thread/INFO]: MrGuy987 joined the game
-[22:09:08] [Server thread/INFO]: MrGuy987[/[0:0:0:0:0:0:0:1]:58704] logged in with entity id 2011 at ([minecraft:overworld]-930.209049048839, 68.0, -124.97922651866746)
+[22:12:29] [ServerMain/INFO]: Loaded 1797 advancements
+[22:12:30] [Server thread/INFO]: Starting minecraft server version 26.2
+[22:12:30] [Server thread/INFO]: Loading properties
+[22:12:30] [Server thread/INFO]: This server is running Paper version 26.2-111-main@f570646 (2026-08-07T16:16:19Z) (Implementing API version 26.2.build.111-stable)
+[22:12:30] [Server thread/INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
+[22:12:31] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[22:12:31] [Server thread/INFO]: Using 4 threads for Netty based IO
+[22:12:34] [Server thread/INFO]: [MoonriseCommon] Paper is using 1 worker threads, 1 I/O threads
+[22:12:36] [Server thread/INFO]: Default game type: SURVIVAL
+[22:12:36] [Server thread/INFO]: Generating keypair
+[22:12:36] [Server thread/INFO]: Starting Minecraft server on *:25567
+[22:12:36] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+[22:12:36] [Server thread/INFO]: Paper: Using OpenSSL 3.x.x (Linux x86_64) cipher from Velocity.
+[22:12:39] [Server thread/INFO]: [ViaVersion] Loading server plugin ViaVersion v5.11.0
+[22:12:39] [Server thread/INFO]: [ViaVersion] ViaVersion 5.11.0 is now loaded. Registering protocol transformers and injecting...
+[22:12:44] [Server thread/INFO]: [ViaBackwards] Loading translations...
+[22:12:44] [Server thread/INFO]: [ViaBackwards] Registering protocols...
+[22:12:46] [Server thread/INFO]: [ViaBackwards] Loading server plugin ViaBackwards v5.11.0
+[22:12:46] [Server thread/INFO]: [TuffXPlus] Loading server plugin TuffXPlus v1.1.1
+[22:12:49] [Server thread/INFO]: [packetevents] Loading packetevents...
+[22:12:57] [Server thread/INFO]: [packetevents] Loaded packetevents v2.13.0 for TuffXPlus
+[22:12:57] [Server thread/INFO]: [AxSmithing] Loading server plugin AxSmithing v1.9
+[22:12:57] [Server thread/INFO]: [LuckPerms] Loading server plugin LuckPerms v5.5.88
+[22:12:58] [Server thread/INFO]: [LuckPerms] Loading configuration...
+[22:12:58] [Server thread/INFO]: [PlayerKits2] Loading server plugin PlayerKits2 v1.24.1
+[22:12:58] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.5.88
+[22:12:59] [Server thread/INFO]:         __    
+[22:12:59] [Server thread/INFO]:   |    |__)   LuckPerms v5.5.88
+[22:12:59] [Server thread/INFO]:   |___ |      Running on Bukkit - Paper
+[22:12:59] [Server thread/INFO]: 
+[22:12:59] [Server thread/INFO]: [LuckPerms] Loading storage provider... [H2]
+[22:13:01] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
+[22:13:01] [Server thread/INFO]: [LuckPerms] Performing initial data load...
+[22:13:01] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 3255ms)
+[22:13:01] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[22:13:01] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[22:13:01] [Server thread/WARN]: Whilst this makes it possible to use Velocity, unless access to your server is properly restricted, it also opens up the ability for hackers to connect with any username they choose.
+[22:13:01] [Server thread/WARN]: Please see https://docs.papermc.io/velocity/security for further information.
+[22:13:01] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[22:13:01] [Server thread/INFO]: Preparing level "world"
+[22:13:03] [Server thread/INFO]: Loading 0 persistent chunks for level 'minecraft:overworld'...
+[22:13:03] [Server thread/INFO]: Preparing spawn area: 100%
+[22:13:03] [Server thread/INFO]: Prepared spawn area in 5 ms
+[22:13:03] [Server thread/INFO]: Loading 0 persistent chunks for level 'minecraft:the_nether'...
+[22:13:03] [Server thread/INFO]: Prepared spawn area in 4 ms
+[22:13:03] [Server thread/INFO]: Loading 0 persistent chunks for level 'minecraft:the_end'...
+[22:13:03] [Server thread/INFO]: Prepared spawn area in 2 ms
+[22:13:03] [Server thread/INFO]: Done preparing level "world" (1.947s)
+[22:13:03] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v5.11.0
+[22:13:03] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 26.2 (776)
+[22:13:03] [Server thread/INFO]: [ViaBackwards] Enabling ViaBackwards v5.11.0
+[22:13:03] [Server thread/INFO]: [TuffXPlus] Enabling TuffXPlus v1.1.1
+[22:13:03] [Server thread/INFO]: [TuffXPlus] Using standard Bukkit-compatible schedulers.
+[22:13:03] [Server thread/INFO]: [TuffXPlus] [Y0] Server Minecraft Version: 26.2
+[22:13:05] [Server thread/INFO]: [TuffXPlus] [TuffActions] Successfully loaded 1326 creative tab mappings.
+[22:13:05] [Server thread/INFO]: [TuffXPlus] [TuffActions] TuffActions has been enabled
+[22:13:05] [Server thread/INFO]: [TuffXPlus] [TuffActions] Enabling features...
+[22:13:05] [Server thread/INFO]: [TuffXPlus] [TuffActions] Swimming enabled.
+[22:13:05] [Server thread/INFO]: [TuffXPlus] [TuffActions] Creative Items enabled.
+[22:13:05] [Server thread/INFO]: [TuffXPlus] [TuffActions] Loading Restrictions config...
+[22:13:05] [Server thread/INFO]: [TuffXPlus] [TuffActions] Restrictions enabled.
+[22:13:05] [Server thread/INFO]: [TuffXPlus] [TuffActions] Finished enabling features.
+[22:13:05] [Server thread/INFO]: [TuffXPlus] [ViaBlocks] Generating ViaBlocks Pre-Defined Palette...
+[22:13:05] [Server thread/INFO]: [TuffXPlus] [ViaBlocks] Palette initialized with 649 entries.
+[22:13:05] [Server thread/INFO]: [TuffXPlus] [ViaBlocks] ViaBlocks has been enabled successfully and is listening for client handshakes.
+[22:13:05] [Server thread/INFO]: [TuffXPlus] [ViaEntities] ViaEntities enabled with 43 modern entities
+[22:13:05] [Server thread/INFO]: [TuffXPlus] 
+[22:13:05] [Server thread/INFO]: [TuffXPlus] ████████╗██╗   ██╗███████╗ ███████╗ ██╗  ██╗     ██╗
+[22:13:05] [Server thread/INFO]: [TuffXPlus] ╚══██╔══╝██║   ██║██╔════╝ ██╔════╝ ╚██╗██╔╝     ██║
+[22:13:05] [Server thread/INFO]: [TuffXPlus]    ██║   ██║   ██║██████╗  ██████╗   ╚███╔╝ ████████████╗
+[22:13:05] [Server thread/INFO]: [TuffXPlus]    ██║   ██║   ██║██╔═══╝  ██╔═══╝   ██╔██╗ ╚════██╔════╝
+[22:13:05] [Server thread/INFO]: [TuffXPlus]    ██║   ╚██████╔╝██║      ██║      ██╔╝╚██╗     ██║
+[22:13:05] [Server thread/INFO]: [TuffXPlus]    ╚═╝    ╚═════╝ ╚═╝      ╚═╝      ╚═╝  ╚═╝     ╚═╝
+[22:13:05] [Server thread/INFO]: [TuffXPlus] 
+[22:13:05] [Server thread/INFO]: [TuffXPlus] CREDITS
+[22:13:05] [Server thread/INFO]: [TuffXPlus] 
+[22:13:05] [Server thread/INFO]: [TuffXPlus] Y0 support:
+[22:13:05] [Server thread/INFO]: [TuffXPlus] • Below y0 (client + plugin) programmed by Potato (@justatypicalpotato)
+[22:13:05] [Server thread/INFO]: [TuffXPlus] • llucasandersen - plugin optimizations
+[22:13:05] [Server thread/INFO]: [TuffXPlus] 
+[22:13:05] [Server thread/INFO]: [TuffXPlus] ViaBlocks:
+[22:13:05] [Server thread/INFO]: [TuffXPlus] • ViaBlocks partial plugin and client rewrite by Potato
+[22:13:05] [Server thread/INFO]: [TuffXPlus] • llucasandersen (Complex client models and texture fixes,
+[22:13:05] [Server thread/INFO]: [TuffXPlus] 	  optimizations, PacketEvents migration and async safety fixes)
+[22:13:05] [Server thread/INFO]: [TuffXPlus] • coleis1op, if ts is driving me crazy, im taking credit
+[22:13:05] [Server thread/INFO]: [TuffXPlus] 
+[22:13:05] [Server thread/INFO]: [TuffXPlus] Other:
+[22:13:05] [Server thread/INFO]: [TuffXPlus] • Swimming and creative items programmed by Potato (@justatypicalpotato)
+[22:13:05] [Server thread/INFO]: [TuffXPlus] • shaded build, 1.14+ support (before merge) - llucasandersen
+[22:13:05] [Server thread/INFO]: [TuffXPlus] • Restrictions - UplandJacob
+[22:13:05] [Server thread/INFO]: [TuffXPlus] • Overall plugin merges by Potato
+[22:13:05] [Server thread/INFO]: [AxSmithing] Enabling AxSmithing v1.9
+[22:13:06] [Server thread/INFO]: [PlayerKits2] Enabling PlayerKits2 v1.24.1
+[22:13:06] [Server thread/INFO]: [PlayerKits²] Has been enabled! Version: 1.24.1
+[22:13:06] [Server thread/INFO]: [PlayerKits²] Thanks for using my plugin!   ~Ajneb97
+[22:13:07] [Server thread/INFO]: There is a new version available. (1.24.2)
+[22:13:07] [Server thread/INFO]: You can download it at: https://modrinth.com/plugin/playerkits-2
+[22:13:07] [Server thread/INFO]: [spark] Starting background profiler...
+[22:13:08] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[22:13:08] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+[22:13:09] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+[22:13:09] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[22:13:09] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[22:13:09] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[22:13:09] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[22:13:09] [Server thread/INFO]: Running delayed init tasks
+[22:13:09] [Server thread/INFO]: [TuffXPlus] [Y0] Loading mappings from 26.2-mappings.json
+[22:13:09] [Craft Scheduler Thread - 5 - ViaVersion/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor.
+[22:13:10] [Server thread/INFO]: [TuffXPlus] [Y0] Loaded 29671 legacy mappings.
+[22:13:10] [Server thread/WARN]: [ViaVersion] There is a newer plugin version available: 5.12.1, you're on: 5.11.0
+[22:13:10] [Server thread/INFO]: Done (75.709s)! For help, type "help"
+[22:13:11] [Paper Async Task Handler Thread - 1/WARN]: *** You are running an outdated version of Minecraft, which is 2 releases and 23 builds behind!
+[22:13:11] [Paper Async Task Handler Thread - 1/WARN]: *** Please update to the latest stable version on https://papermc.io/downloads/paper ***
+[22:23:44] [User Authenticator #0/INFO]: UUID of player MrGuy987 is 1e921d2d-4ec0-3874-aeb6-f04b090ec0ec
+[22:23:44] [Server thread/INFO]: [HorriblePlayerLoginEventHack] You have plugins listening to the PlayerLoginEvent, this will cause re-configuration APIs to be unavailable: [LuckPerms]
+[22:23:47] [Server thread/INFO]: MrGuy987 joined the game
+[22:23:47] [Server thread/INFO]: MrGuy987[/[0:0:0:0:0:0:0:1]:38474] logged in with entity id 1 at ([minecraft:overworld]-938.5384202500136, -28.620055606478193, -117.62095064343379)
+[22:24:34] [Server thread/INFO]: MrGuy987 issued server command: /tick rate 10
+[22:24:34] [Server thread/INFO]: [MrGuy987: Set the target tick rate to 10.0 per second]
+[22:24:43] [Server thread/INFO]: MrGuy987 issued server command: /function orbital:give/nuke_aim_1
+[22:24:43] [Server thread/INFO]: [MrGuy987: Running function orbital:give/nuke_aim_1]
+[22:26:25] [Server thread/INFO]: MrGuy987 issued server command: /function orbital:give/nuke_aim_3
+[22:26:25] [Server thread/INFO]: [MrGuy987: Running function orbital:give/nuke_aim_3]
+[22:26:41] [Server thread/INFO]: MrGuy987 issued server command: /tick rate 20
+[22:26:41] [Server thread/INFO]: [MrGuy987: Set the target tick rate to 20.0 per second]
+[22:26:50] [Server thread/INFO]: MrGuy987 issued server command: /function orbital:give_messages/cinematic_nuke_aim
+[22:26:50] [Server thread/INFO]: [MrGuy987: Running function orbital:give_messages/cinematic_nuke_aim]
+[22:29:35] [Server thread/INFO]: MrGuy987 lost connection: Timed out
+[22:29:35] [Server thread/INFO]: MrGuy987 left the game
