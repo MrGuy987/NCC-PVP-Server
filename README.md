@@ -2,6 +2,32 @@
 
 <a href="https://docs.google.com/document/d/1TkJUnf5_cWN-4fKtNoRx7iSjIxenmBt01bUq8b_cgLk/edit?tab=t.0">Stuff to start Server</a>
 
+
+### How to Start the Servers
+Run each of the following commands in a **separate terminal**:
+
+* **Main Server:**
+  ```bash
+  cd /workspaces/eaglercraft-26.2/server && java -Xms1G -Xmx2G -jar paper.jar nogui
+  ```
+* **Limbo Server:**
+  ```bash
+  cd /workspaces/eaglercraft-26.2/limbo && java -Xms768M -Xmx1536M -jar paper.jar nogui
+  ```
+* **Velocity Proxy:**
+  ```bash
+  cd /workspaces/eaglercraft-26.2/velocity && java -Xms512M -Xmx1G -jar velocity.jar
+  ```
+
+### How to View the Server Console
+To monitor all server logs and console outputs in real time, run this command:
+
+```bash
+cd /workspaces/eaglercraft-26.2 && tail -F velocity/logs/latest.log server/logs/latest.log limbo/logs/latest.log
+```
+
+
+
 A Minecraft **26.2 server** designed to run through **GitHub Codespaces**, with support for both **normal Minecraft** and **EaglerCraft**.
 
 The server is primarily designed to be accessed through **Tuff Client**, providing a simple way to connect, authenticate, and play without needing a traditional dedicated server machine.
@@ -187,11 +213,6 @@ Open the repository on GitHub and select:
 
 Once the Codespace has loaded, start the server using the provided startup configuration/scripts.
 
-```bash
-# Example
-./start.sh
-```
-
 > The exact startup command may differ depending on the configuration of this repository.
 
 ### 4. Expose the server
@@ -270,11 +291,21 @@ Because the server runs through GitHub Codespaces, development and server manage
 
 You can modify the project, restart the server, test changes, and work on the configuration without leaving your Codespace.
 
-### Static dashboard on GitHub Pages
+### Private live server dashboard
 
-The repository's root [`index.html`](./index.html) is a standalone server-dashboard demo. To publish it, open **Settings → Pages** on GitHub and select the `main` branch and `/ (root)` as the build source.
+Run the read-only dashboard from the repository root:
 
-The dashboard is a static, browser-only mockup: its start/stop controls, console, settings, files, and player records do not control this Codespaces server. Demo edits are saved in the visitor's browser. Controlling a real server requires a separately hosted backend with authenticated server-side access; GitHub Pages alone cannot run the server or edit its files.
+```bash
+export DASHBOARD_PASSWORD='choose-a-unique-password-of-at-least-12-characters'
+# Optional: set DASHBOARD_TOTP_SECRET to your authenticator's Base32 secret
+node dashboard/server.mjs
+```
+
+Store these values as Codespaces secrets instead of committing them. `DASHBOARD_PASSWORD` must be at least 12 characters; if it is omitted, the dashboard generates a password and prints it at startup. To enable authenticator-based two-factor authentication, generate a random Base32 secret (for example, `python3 -c 'import base64,secrets; print(base64.b32encode(secrets.token_bytes(20)).decode().rstrip("="))'`), save it as the `DASHBOARD_TOTP_SECRET` Codespaces secret, and add the same secret to your authenticator app as a time-based one-time password. Without that setting, sign-in uses the password alone.
+
+In Codespaces, open the **Ports** tab, open port `4173`, and keep its visibility set to **Private**. Visit the forwarded URL and sign in. Sessions expire after 12 hours and are held in an HttpOnly cookie. The dashboard shows the live Minecraft status, player names derived from Paper's join/leave logs, and searchable recent server logs with severity and player-join filters; it refreshes every five seconds.
+
+The dashboard does not start, stop, or send commands to the Minecraft server. Keep its Codespaces port private and do not share the password or TOTP secret. Stop the dashboard with `Ctrl+C`.
 
 ---
 
