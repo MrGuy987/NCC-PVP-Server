@@ -215,11 +215,6 @@ Open the repository on GitHub and select:
 
 Once the Codespace has loaded, start the server using the provided startup configuration/scripts.
 
-```bash
-# Example
-./start.sh
-```
-
 > The exact startup command may differ depending on the configuration of this repository.
 
 ### 4. Expose the server
