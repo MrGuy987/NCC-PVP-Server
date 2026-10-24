@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#101310">
+	<title>Craftwatch | Server dashboard</title>
+	<style>
+		:root {
+			color-scheme: dark;
+			--bg: #101310;
+			--panel: #191d19;
+			--panel-raised: #202520;
+			--line: #303830;
+			--text: #f0f4ed;
+			--muted: #97a397;
+			--green: #a6ed74;
+			--green-dark: #24391d;
+			--red: #ff7777;
+			--mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+			font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+			background: var(--bg);
+			color: var(--text);
+		}
+
+		* { box-sizing: border-box; }
+		body { margin: 0; min-width: 320px; background: radial-gradient(ellipse at 20% 0, #1a281d 0, var(--bg) 43rem); }
+		button, input { font: inherit; }
+		button { cursor: pointer; }
+		.shell { width: min(1160px, calc(100% - 40px)); margin: 0 auto; padding: 30px 0 44px; }
+		.topbar { display: flex; align-items: center; justify-content: space-between; gap: 18px; padding-bottom: 28px; border-bottom: 1px solid var(--line); }
+		.brand { display: flex; align-items: center; gap: 12px; }
+		.brand-mark { width: 38px; height: 38px; display: grid; place-items: center; border-radius: 11px; color: #121710; background: var(--green); font-size: 20px; font-weight: 900; }
+		.brand-name { font-size: 16px; font-weight: 760; letter-spacing: .02em; }
+		.brand-caption { margin-top: 3px; color: var(--muted); font-size: 12px; }
+		.private-chip, .status-pill { display: inline-flex; align-items: center; gap: 8px; border: 1px solid var(--line); border-radius: 999px; color: var(--muted); background: #171b17; padding: 8px 12px; font-size: 12px; font-weight: 650; }
+		.private-chip::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--green); }
+		.intro { display: flex; justify-content: space-between; align-items: flex-end; gap: 20px; padding: 34px 0 24px; }
+		.eyebrow { color: var(--green); text-transform: uppercase; letter-spacing: .15em; font-size: 10px; font-weight: 750; }
+		h1 { margin: 8px 0 0; font-size: clamp(25px, 4vw, 36px); letter-spacing: -.04em; }
+		.subtitle { margin: 9px 0 0; color: var(--muted); font-size: 14px; }
+		.status-pill { border-color: #40513c; color: var(--green); }
+		.status-pill.offline { border-color: #593b3b; color: var(--red); }
+		.status-pill::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: currentColor; box-shadow: 0 0 12px currentColor; }
+		.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+		.card { border: 1px solid var(--line); border-radius: 14px; background: linear-gradient(145deg, #1b201b, #171b17); }
+		.metric { min-height: 128px; padding: 19px 20px; }
+		.card-label { color: var(--muted); text-transform: uppercase; letter-spacing: .11em; font-size: 10px; font-weight: 740; }
+		.metric-value { margin-top: 15px; font-size: 30px; font-weight: 740; letter-spacing: -.04em; }
+		.metric-detail { margin-top: 5px; color: var(--muted); font-size: 12px; }
+		.content-grid { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1.4fr); gap: 14px; margin-top: 14px; }
+		.section-card { min-height: 350px; overflow: hidden; }
+		.section-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 18px 20px; border-bottom: 1px solid var(--line); }
+		.section-title { margin: 0; font-size: 14px; font-weight: 720; }
+		.section-meta { color: var(--muted); font-size: 11px; }
+		.player-list { padding: 4px 18px 12px; }
+		.player-row { display: flex; align-items: center; gap: 12px; padding: 13px 2px; border-bottom: 1px solid #293029; }
+		.player-row:last-child { border-bottom: 0; }
+		.avatar { width: 34px; height: 34px; display: grid; place-items: center; flex: none; border: 1px solid #43563a; border-radius: 9px; color: var(--green); background: var(--green-dark); font-family: var(--mono); font-size: 13px; font-weight: 700; }
+		.player-name { min-width: 0; overflow: hidden; text-overflow: ellipsis; font-size: 13px; font-weight: 640; }
+		.player-state { margin-left: auto; color: var(--green); font-size: 11px; }
+		.empty { padding: 42px 20px; color: var(--muted); text-align: center; font-size: 13px; line-height: 1.65; }
+		.warning { margin: 0 18px 16px; padding: 10px 12px; border: 1px solid #64532a; border-radius: 9px; color: #e8c86d; background: #302b1c; font-size: 11px; line-height: 1.5; }
+		.log-wrap { padding: 13px 16px; }
+		.log-controls { display: flex; align-items: center; gap: 7px; }
+		.log-search, .log-level { min-width: 0; border: 1px solid var(--line); border-radius: 7px; outline: none; color: var(--text); background: #101310; padding: 7px 9px; font-size: 11px; }
+		.log-search { width: 145px; }
+		.log-level { width: 105px; }
+		.log-search:focus, .log-level:focus { border-color: var(--green); }
+		.log-view { height: 275px; overflow: auto; margin: 0; color: #c0cbbd; font: 11px/1.75 var(--mono); white-space: pre-wrap; overflow-wrap: anywhere; }
+		.log-line { display: block; padding: 1px 0; }
+		.log-line.join { color: var(--green); }
+		.log-line.error { color: var(--red); }
+		.log-line.warn { color: #e8c86d; }
+		.log-empty { color: var(--muted); }
+		@media (max-width: 520px) {
+			.log-controls { flex-wrap: wrap; justify-content: flex-end; }
+			.log-search { width: min(145px, 100%); }
+		}
+		.footer { display: flex; justify-content: space-between; gap: 10px; padding: 18px 2px 0; color: var(--muted); font-size: 11px; }
+		.refresh-button, .logout-button { border: 1px solid var(--line); border-radius: 8px; color: var(--text); background: var(--panel-raised); padding: 8px 11px; font-size: 11px; font-weight: 650; }
+		.refresh-button:hover, .logout-button:hover { border-color: #52614f; }
+		#login-panel { max-width: 430px; margin: 12vh auto 0; padding: 24px; }
+		#login-panel h1 { font-size: 25px; }
+		.login-copy { color: var(--muted); font-size: 13px; line-height: 1.6; }
+		.login-form { display: grid; gap: 9px; margin-top: 19px; }
+		.login-input { width: 100%; min-width: 0; border: 1px solid var(--line); border-radius: 8px; outline: none; color: var(--text); background: #101310; padding: 10px 12px; font-family: var(--mono); font-size: 12px; }
+		.login-input:focus { border-color: var(--green); }
+		.submit-button { border: 0; border-radius: 8px; color: #11160e; background: var(--green); padding: 0 15px; font-size: 12px; font-weight: 750; }
+		.login-error { min-height: 18px; margin: 10px 0 0; color: var(--red); font-size: 12px; }
+		.hidden { display: none !important; }
+		@media (max-width: 760px) {
+			.grid { grid-template-columns: 1fr; gap: 10px; }
+			.metric { min-height: 100px; }
+			.metric-value { margin-top: 9px; }
+			.content-grid { grid-template-columns: 1fr; }
+			.section-card { min-height: 0; }
+			.intro { align-items: flex-start; flex-direction: column; }
+			.footer { flex-direction: column; }
+		}
+		@media (max-width: 430px) {
+			.shell { width: calc(100% - 24px); padding-top: 18px; }
+			.private-chip { padding: 7px 9px; font-size: 10px; }
+			.submit-button { min-height: 40px; }
+		}
+	</style>
+</head>
+<body>
+	<section id="login-panel" class="card hidden" aria-labelledby="login-title">
+		<div class="brand">
+			<div class="brand-mark" aria-hidden="true">C</div>
+			<div><div class="brand-name">Craftwatch</div><div class="brand-caption">Private server dashboard</div></div>
+		</div>
+		<h1 id="login-title">Connect to your server</h1>
+		<p id="login-copy" class="login-copy">Sign in with the dashboard password.</p>
+		<form id="login-form" class="login-form">
+			<input id="password-input" class="login-input" type="password" autocomplete="current-password" placeholder="Dashboard password" required>
+			<input id="code-input" class="login-input hidden" type="text" inputmode="numeric" autocomplete="one-time-code" pattern="[0-9]{6}" maxlength="6" placeholder="6-digit authenticator code">
+			<button class="submit-button" type="submit">Sign in</button>
+		</form>
+		<p id="login-error" class="login-error" role="status"></p>
+	</section>
+
+	<main id="dashboard" class="shell hidden">
+		<header class="topbar">
+			<div class="brand">
+				<div class="brand-mark" aria-hidden="true">C</div>
+				<div><div class="brand-name">Craftwatch</div><div class="brand-caption">Minecraft server dashboard</div></div>
+			</div>
+			<div class="brand">
+				<span class="private-chip">Private dashboard</span>
+				<button id="logout-button" class="logout-button" type="button">Lock</button>
+			</div>
+		</header>
+
+		<section class="intro">
+			<div>
+				<div class="eyebrow">Server overview</div>
+				<h1>Your world, at a glance.</h1>
+				<p class="subtitle">Live status, players, and recent server activity.</p>
+			</div>
+			<div id="server-pill" class="status-pill offline" role="status">Checking server</div>
+		</section>
+
+		<section class="grid" aria-label="Server metrics">
+			<article class="card metric">
+				<div class="card-label">Players online</div>
+				<div id="player-count" class="metric-value">—</div>
+				<div id="player-detail" class="metric-detail">Waiting for server status</div>
+			</article>
+			<article class="card metric">
+				<div class="card-label">Server version</div>
+				<div id="server-version" class="metric-value">—</div>
+				<div id="server-address" class="metric-detail">Checking address</div>
+			</article>
+			<article class="card metric">
+				<div class="card-label">Connection</div>
+				<div id="connection-state" class="metric-value">—</div>
+				<div id="connection-detail" class="metric-detail">Minecraft status ping</div>
+			</article>
+		</section>
+
+		<section class="content-grid">
+			<article class="card section-card">
+				<header class="section-head">
+					<div><h2 class="section-title">Online players</h2><div class="section-meta">Live join and leave events</div></div>
+					<div id="known-player-count" class="section-meta">—</div>
+				</header>
+				<div id="player-list" class="player-list"><div class="empty">Waiting for player data…</div></div>
+				<div id="player-warning" class="warning hidden"></div>
+			</article>
+			<article class="card section-card">
+				<header class="section-head">
+					<div><h2 class="section-title">Recent console output</h2><div id="log-meta" class="section-meta">Latest lines from Paper</div></div>
+					<div class="log-controls">
+						<input id="log-search" class="log-search" type="search" placeholder="Search logs" aria-label="Search recent server logs">
+						<select id="log-level" class="log-level" aria-label="Filter logs by type">
+							<option value="all">All types</option>
+							<option value="error">Errors</option>
+							<option value="warn">Warnings</option>
+							<option value="join">Player joins</option>
+						</select>
+						<button id="refresh-button" class="refresh-button" type="button">Refresh</button>
+					</div>
+				</header>
+				<div class="log-wrap"><pre id="log-view" class="log-view" aria-live="polite"><span class="log-empty">Waiting for server logs…</span></pre></div>
+			</article>
+		</section>
+		<footer class="footer">
+			<span>Read-only dashboard · no server commands are sent</span>
+			<span id="last-updated">Waiting for first update</span>
+		</footer>
+	</main>
+
+	<script>
+		const loginPanel = document.querySelector("#login-panel");
+		const dashboard = document.querySelector("#dashboard");
+		const loginForm = document.querySelector("#login-form");
+		const passwordInput = document.querySelector("#password-input");
+		const codeInput = document.querySelector("#code-input");
+		const loginError = document.querySelector("#login-error");
+		const loginCopy = document.querySelector("#login-copy");
+		let refreshTimer;
+		let currentLogs = [];
+		let currentLogsTruncated = false;
+
+		function showLogin(message = "") {
+			clearInterval(refreshTimer);
+			dashboard.classList.add("hidden");
+			loginPanel.classList.remove("hidden");
+			loginError.textContent = message;
+			passwordInput.value = "";
+			codeInput.value = "";
+			passwordInput.focus();
+		}
+
+		async function api(path) {
+			const response = await fetch(path, {
+				credentials: "same-origin",
+				cache: "no-store"
+			});
+			const body = await response.json();
+			if (!response.ok) {
+				const error = new Error(body.error || `Request failed (${response.status})`);
+				error.status = response.status;
+				throw error;
+			}
+			return body;
+		}
+
+		async function requestLogin() {
+			const response = await fetch("/api/auth/login", {
+				method: "POST",
+				credentials: "same-origin",
+				cache: "no-store",
+				headers: { "Content-Type": "application/json" },
+				body: JSON.stringify({ password: passwordInput.value, code: codeInput.value })
+			});
+			const body = await response.json();
+			if (!response.ok) throw new Error(body.error || `Sign-in failed (${response.status})`);
+		}
+
+		async function startDashboard() {
+			loginPanel.classList.add("hidden");
+			dashboard.classList.remove("hidden");
+			loginError.textContent = "";
+			try {
+				await refresh();
+			} catch (error) {
+				if (error.status === 401) {
+					showLogin("Your session expired. Sign in again.");
+					return;
+				}
+				document.querySelector("#connection-detail").textContent = error.message;
+			}
+			clearInterval(refreshTimer);
+			refreshTimer = setInterval(() => {
+				refresh().catch(error => {
+					if (error.status === 401) showLogin("Your session expired. Sign in again.");
+					else document.querySelector("#connection-detail").textContent = error.message;
+				});
+			}, 5000);
+		}
+
+		function drawPlayers(result) {
+			const list = document.querySelector("#player-list");
+			const warning = document.querySelector("#player-warning");
+			document.querySelector("#known-player-count").textContent = `${result.players.length} known`;
+			list.replaceChildren();
+			if (result.players.length === 0) {
+				const empty = document.createElement("div");
+				empty.className = "empty";
+				empty.textContent = "No online players detected.";
+				list.append(empty);
+			} else {
+				for (const name of result.players) {
+					const row = document.createElement("div");
+					row.className = "player-row";
+					const avatar = document.createElement("div");
+					avatar.className = "avatar";
+					avatar.setAttribute("aria-hidden", "true");
+					avatar.textContent = name.slice(0, 2).toUpperCase();
+					const playerName = document.createElement("div");
+					playerName.className = "player-name";
+					playerName.textContent = name;
+					const state = document.createElement("div");
+					state.className = "player-state";
+					state.textContent = "Online";
+					row.append(avatar, playerName, state);
+					list.append(row);
+				}
+			}
+			warning.classList.toggle("hidden", result.complete);
+			if (!result.complete) {
+				warning.textContent = "Player names are based on the current Paper log. The log is missing the current startup marker or has been truncated, so this list may be incomplete.";
+			}
+		}
+
+		function drawLogs(result, scrollToBottom = true) {
+			currentLogs = result.lines;
+			currentLogsTruncated = result.truncated;
+			const view = document.querySelector("#log-view");
+			view.replaceChildren();
+			const query = document.querySelector("#log-search").value.trim().toLocaleLowerCase();
+			const level = document.querySelector("#log-level").value;
+			const lines = currentLogs.filter(line => {
+				if (query && !line.toLocaleLowerCase().includes(query)) return false;
+				if (level === "error") return /\bERROR\b/.test(line);
+				if (level === "warn") return /\bWARN\b/.test(line);
+				if (level === "join") return / joined the game$/.test(line);
+				return true;
+			});
+			const logMeta = document.querySelector("#log-meta");
+			logMeta.textContent = `Latest ${currentLogs.length} lines from Paper${currentLogsTruncated ? " · older log content omitted (10 MiB limit)" : ""}`;
+			if (lines.length === 0) {
+				const empty = document.createElement("span");
+				empty.className = "log-empty";
+				empty.textContent = currentLogs.length === 0 ? "No log lines available." : "No matching log lines.";
+				view.append(empty);
+				return;
+			}
+			for (const line of lines) {
+				const row = document.createElement("span");
+				row.className = "log-line";
+				if (/ joined the game$/.test(line)) row.classList.add("join");
+				if (/\bERROR\b/.test(line)) row.classList.add("error");
+				else if (/\bWARN\b/.test(line)) row.classList.add("warn");
+				row.textContent = line;
+				view.append(row);
+			}
+			if (scrollToBottom) view.scrollTop = view.scrollHeight;
+		}
+
+		function filterLogs() {
+			drawLogs({ lines: currentLogs, truncated: currentLogsTruncated }, false);
+		}
+
+		async function refresh() {
+			const results = await Promise.all([
+				api("/api/status"),
+				api("/api/players"),
+				api("/api/logs?limit=100")
+			]);
+			const [status, players, logs] = results;
+			const pill = document.querySelector("#server-pill");
+			pill.classList.toggle("offline", !status.online);
+			pill.textContent = status.online ? "Server online" : "Server offline";
+			document.querySelector("#player-count").textContent = status.online
+				? `${status.playersOnline} / ${status.maxPlayers}`
+				: "—";
+			document.querySelector("#player-detail").textContent = status.online
+				? `${players.players.length} names detected from logs`
+				: "No response from the Minecraft server";
+			document.querySelector("#server-version").textContent = status.version || "—";
+			document.querySelector("#server-address").textContent = `${status.host}:${status.port}`;
+			document.querySelector("#connection-state").textContent = status.online ? "Connected" : "Offline";
+			document.querySelector("#connection-detail").textContent = status.online
+				? "Minecraft status ping successful"
+				: status.error || "Server did not respond";
+			drawPlayers(players);
+			drawLogs(logs);
+			document.querySelector("#last-updated").textContent =
+				`Updated ${new Date(status.checkedAt).toLocaleTimeString()}`;
+		}
+
+		async function connectDashboard() {
+			try {
+				await requestLogin();
+				passwordInput.value = "";
+				codeInput.value = "";
+				await startDashboard();
+			} catch (error) {
+				loginError.textContent = error.message;
+				codeInput.value = "";
+				if (codeInput.classList.contains("hidden")) passwordInput.focus();
+				else codeInput.focus();
+			}
+		}
+
+		loginForm.addEventListener("submit", event => {
+			event.preventDefault();
+			void connectDashboard();
+		});
+		document.querySelector("#refresh-button").addEventListener("click", () => {
+			refresh().catch(error => {
+				if (error.status === 401) showLogin("Your session expired. Sign in again.");
+				else document.querySelector("#connection-detail").textContent = error.message;
+			});
+		});
+		document.querySelector("#log-search").addEventListener("input", filterLogs);
+		document.querySelector("#log-level").addEventListener("change", filterLogs);
+		document.querySelector("#logout-button").addEventListener("click", async () => {
+			try {
+				const response = await fetch("/api/auth/logout", { method: "POST", credentials: "same-origin", cache: "no-store" });
+				if (!response.ok) throw new Error(`Sign-out failed (${response.status})`);
+				showLogin();
+			} catch (error) {
+				document.querySelector("#connection-detail").textContent = error.message;
+			}
+		});
+
+		loginPanel.classList.remove("hidden");
+		void api("/api/auth/config").then(config => {
+			codeInput.classList.toggle("hidden", !config.totpEnabled);
+			codeInput.required = config.totpEnabled;
+			loginCopy.textContent = config.totpEnabled
+				? "Enter your dashboard password and the current code from your authenticator app."
+				: "Sign in with the dashboard password.";
+		}).then(() => api("/api/status")).then(startDashboard).catch(error => {
+			if (error.status !== 401) loginError.textContent = error.message;
+		});
+	</script>
+</body>
+</html>

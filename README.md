@@ -298,11 +298,21 @@ Because the server runs through GitHub Codespaces, development and server manage
 
 You can modify the project, restart the server, test changes, and work on the configuration without leaving your Codespace.
 
-### Static dashboard on GitHub Pages
+### Private live server dashboard
 
-The repository's root [`index.html`](./index.html) is a standalone server-dashboard demo. To publish it, open **Settings → Pages** on GitHub and select the `main` branch and `/ (root)` as the build source.
+Run the read-only dashboard from the repository root:
 
-The dashboard is a static, browser-only mockup: its start/stop controls, console, settings, files, and player records do not control this Codespaces server. Demo edits are saved in the visitor's browser. Controlling a real server requires a separately hosted backend with authenticated server-side access; GitHub Pages alone cannot run the server or edit its files.
+```bash
+export DASHBOARD_PASSWORD='choose-a-unique-password-of-at-least-12-characters'
+# Optional: set DASHBOARD_TOTP_SECRET to your authenticator's Base32 secret
+node dashboard/server.mjs
+```
+
+Store these values as Codespaces secrets instead of committing them. `DASHBOARD_PASSWORD` must be at least 12 characters; if it is omitted, the dashboard generates a password and prints it at startup. To enable authenticator-based two-factor authentication, generate a random Base32 secret (for example, `python3 -c 'import base64,secrets; print(base64.b32encode(secrets.token_bytes(20)).decode().rstrip("="))'`), save it as the `DASHBOARD_TOTP_SECRET` Codespaces secret, and add the same secret to your authenticator app as a time-based one-time password. Without that setting, sign-in uses the password alone.
+
+In Codespaces, open the **Ports** tab, open port `4173`, and keep its visibility set to **Private**. Visit the forwarded URL and sign in. Sessions expire after 12 hours and are held in an HttpOnly cookie. The dashboard shows the live Minecraft status, player names derived from Paper's join/leave logs, and searchable recent server logs with severity and player-join filters; it refreshes every five seconds.
+
+The dashboard does not start, stop, or send commands to the Minecraft server. Keep its Codespaces port private and do not share the password or TOTP secret. Stop the dashboard with `Ctrl+C`.
 
 ---
 
